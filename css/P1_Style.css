@@ -5,14 +5,14 @@ body{
   margin: auto;
 }
 
-.outer{
+.inner{
   border: solid;
   background-color: lightgray;
   padding: 100px;
   padding-top: 50px;
 }
 
-.outer img{
+.inner img{
   display: block;
   margin-left: auto;
   margin-right: auto;
