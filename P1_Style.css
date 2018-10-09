@@ -2,7 +2,7 @@
 body{
   background-color: rgb(23, 199, 23);
   font-family: verdana;
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 
@@ -15,6 +15,10 @@ div{
 
 header{
   text-align: center;
+}
+
+.table {
+  padding: 0;
 }
 
 table, th, td {
