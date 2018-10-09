@@ -50,18 +50,14 @@
         While the content can be fake, you should try to use meaningful headings
         and captions to convey its meaning. Finally, </p>
 
-<<<<<<< HEAD
         <h4>Index</h4>
         <p> Dette er den første siden du kommer til når du går inn på sida. Hovedfunskjonen til indexen er bare å fungere som hub, men den skal også vise brukeren en nyhetsfeed med nye arrangementer, samt det fuglebildet som har blitt kåret til månedens beste.
         </p>
         <img src="mock_up_index.png" alt="mock-up av forsiden">
 
-        <h4>Arrangementer</h4>
-        <p>"Arrangementer" skal inneholde to elementer. Det ene elementet skal inneholde informasjon om
-=======
+
     <h4>Arrangementer</h4>
     <p>"Arrangementer" skal inneholde to elementer. Det ene elementet skal inneholde informasjon om
->>>>>>> 714420b77595065e3dc18c1e76bcd828f8dd0516
           kommende arrangementer. Det andre elementet skal inneholde informasjon om tidligere avholdte
           arrangementer. Hver av de nevnte arrangementene skal linke til en ny side som viser
         informasjon om det valgte arrangementet. </p>
@@ -69,8 +65,7 @@
     <h4>arrangement</h4>
     <p>"Arrangement" skal inneholde et element. Det ene elementet skal inneholde
         informasjon om det valgte arrangementet. </p>
-<<<<<<< HEAD
-        <img src="mock_up_arrangement.png" alt="mock-up av vis arrangement">
+    <img src="mock_up_arrangement.png" alt="mock-up av vis arrangement">
         <h4>Fugleoversikt</h4>
         <p>"Fugleoversikt" skal fungere som ett mellomledd for å komme til informasjonssiden for fuglene.
            Siden skal bestå av flere hyperlenker som brukeren kan trykke på for å gå til fugl.html og få mer
@@ -94,27 +89,6 @@
         <img src="mock_up_galleri.png" alt="mock-up av fuglegalleriet">
       <h3>Minimumskrav: JavaScript</h3>
       <p> Minimum Requirements: The website must include four distinct JavaScript applications
-=======
-    <img src="mock_up_arrangement.png" alt="mock-up av vis arrangement">
-    <h4>Fugleoversikt</h4>
-    <p>"Fugleoversikt" skal fungere som et mellomledd for å komme til informasjonssiden for fuglene.
-        Siden skal bestå av flere hyperlenker som brukeren kan trykke på for å gå til fugl.html og få mer
-        informasjon om den fuglen. Siden kommer til å vise denne inforamsjonen i en boks på siden. Denne boksen skal
-        det være mulig å "scrolle" på for finne fram til fuglene. Boksen skal også inneholde en søkebar for å gjøre
-        det mulig å søke etter fuglene. Det skal også finnes en annen boks på siden som viser de mest besøkte fulgene.
-        Siden følger det generelle oppsette av nettstedet.</p>
-    <img src="mock_up_fugleoversikt.png" alt="mock-up av fugleoversikt">
-    <h4>Medlemskap</h4>
-    <p>"Medlemskap" er en side som har til hensikt å informere om hva det betyr å være en
-        medlem av Norske fugletittere, og å kunne søke om medlemskap. Å søke om medlemskap skal fungere gjennom et skjema som skal være på siden,
-        hvor brukeren skriver inn informasjon som navn E-mail, og mer. Når man trykker send på søknadskjemaet så vil det komme opp en varsel om at
-        søknaden er sendt, men informasjonen vil ikke bli lagret.
-
-    </p>
-    <img src="mock_up_medlemskap_tekst.PNG" alt="mock-up av medlemskapside">
-    <h3>Minimumskrav: JavaScript</h3>
-    <p> Minimum Requirements: The website must include four distinct JavaScript applications
->>>>>>> 714420b77595065e3dc18c1e76bcd828f8dd0516
         (for example, rollovers effects on images or menus, user-defined functions, form validation, animations etc.).
         The four applications must all be different from each other. Clearly, indicate how each of you will be
         fulfilling these minimum requirements. Please note that each of these items must be constructed entirely
@@ -122,13 +96,18 @@
         class materials). Once you fulfill the minimum requirements with your own code, you are allowed
         to get the code from the web (with source attribution) to incorporate certain advanced components
         (e.g. image galleries with transitions), but they will not count as part of the minimum requirements.</p>
-<<<<<<< HEAD
-      <h4>sendMedlemskap.js</h4>
-      <p></p>
-      <h4>slideshow.js</h4>
-      <p></p>
-      <h4>dropdown.js</h4>
-      <p></p>
+
+        <h4>sendMedlemskap.js</h4>
+        <p>sendMedlemskap skal brukes for å gi en beskjed når brukeren har sendt inn søknadskjemaet på medlemskapsiden,
+             hvor beskjeden skal erstatte skjemaet.
+        </p>
+        <h4>slideshow.js</h4>
+        <p>Funksjonen skal brukes til å bytte ut bildet i toppdelen. Funksjonen skal skifte
+          src til img-tagget på en timer.</p>
+        <h4>dropdown.js</h4>
+        <p>Skal vise en div når en mobilbruker trykker på menyknappen,
+          og skjule menyen når brukeren trykker på knappen igjen. Funksjonen skal også
+          dimme ut alt bak diven.</p>
       <h4>bildeForvisning.js</h4>
         <p>bildeForvisning funksjonen skal vise et forhåndsbilde av fuglen som linken fører til. Funksjonen kommer
         til å bli aktivert med onmouseover og deaktivert med onmouseout eventene. Linken sender this.innerHTML som variable.
@@ -142,33 +121,6 @@
       <h4>filter</h4>
         <p>Skal hente inn teksten til et input-tag og sammenligne det med alle fuglene-linkene. Funksjonen skal
         bare vise de linkene som inneholder strengen fra inputen.</p>
-      <h2>Fil struktur</h2>
-      <p>
-=======
-    <h4>sendMedlemskap.js</h4>
-    <p>sendMedlemskap skal brukes for å gi en beskjed når brukeren har sendt inn søknadskjemaet på medlemskapsiden,
-         hvor beskjeden skal erstatte skjemaet.
-    </p>
-    <h4>slideshow.js</h4>
-    <p>Funksjonen skal brukes til å bytte ut bildet i toppdelen. Funksjonen skal skifte
-      src til img-tagget på en timer.</p>
-    <h4>dropdown.js</h4>
-    <p>Skal vise en div når en mobilbruker trykker på menyknappen,
-      og skjule menyen når brukeren trykker på knappen igjen. Funksjonen skal også
-      dimme ut alt bak diven.</p>
-    <h4>bildeForvisning.js</h4>
-    <p>bildeForvisning funksjonen skal vise et forhåndsbilde av fuglen som linken fører til. Funksjonen kommer
-      til å bli aktivert med onmouseover og deaktivert med onmouseout eventene. Linken sender this.innerHTML som variable.
-      Funksjonen vil si vise en div til høyre for boksen med et img-tag. Funksjonen bruker variablet til funksjonen
-      (navnet til fuglen) til å finne "fugl.jpg" og sette det som src.</p>
-    <h3>Avansert Javascript</h3>
-    <h4>visFugl</h4>
-    <p></p>
-    <h4>visArrangement</h4>
-    <p></p>
-    <h4>filter</h4>
-    <p>Skal hente inn teksten til et input-tag og sammenligne det med alle fuglene-linkene. Funksjonen skal
-      bare vise de linkene som inneholder strengen fra inputen.</p>
     <h2>Fil struktur</h2>
     <p>"..." betyr at det er flere filer, men vi vet ikke hvor mange. </p>
       <ul>
