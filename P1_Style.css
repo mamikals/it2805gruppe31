@@ -5,11 +5,17 @@ body{
   margin: auto;
 }
 
-div{
+.outer{
   border: solid;
   background-color: lightgray;
   padding: 100px;
   padding-top: 50px;
+}
+
+.outer img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header{
@@ -17,10 +23,10 @@ header{
 }
 
 .table {
-  padding: 10px;
+  padding: 0px;
 }
 
-table, th, td {
+.table table, th, td {
   padding-right: 10px;
   padding-bottom: 4px;
   table-layout: fixed;
