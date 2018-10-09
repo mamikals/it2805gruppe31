@@ -34,3 +34,7 @@ header{
   border: 1px solid;
   border-collapse: collapse;
 }
+
+.table thead{
+  font-weight: bold;
+}
