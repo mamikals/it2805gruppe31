@@ -1,4 +1,3 @@
-
 body{
   background-color: rgb(23, 199, 23);
   font-family: verdana;
@@ -18,10 +17,12 @@ header{
 }
 
 .table {
-  padding: 0;
+  padding: 10px;
 }
 
 table, th, td {
+  padding-right: 10px;
+  padding-bottom: 4px;
   table-layout: fixed;
   border: 1px solid;
   border-collapse: collapse;
