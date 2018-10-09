@@ -50,6 +50,11 @@
         While the content can be fake, you should try to use meaningful headings
         and captions to convey its meaning. Finally, </p>
 
+        <h4>Index</h4>
+        <p> Dette er den første siden du kommer til når du går inn på sida. Hovedfunskjonen til indexen er bare å fungere som hub, men den skal også vise brukeren en nyhetsfeed med nye arrangementer, samt det fuglebildet som har blitt kåret til månedens beste.
+        </p>
+        <img src="mock_up_index.png" alt="mock-up av forsiden">
+
         <h4>Arrangementer</h4>
         <p>"Arrangementer" skal inneholde to elementer. Det ene elementet skal inneholde informasjon om
           kommende arrangementer. Det andre elementet skal inneholde informasjon om tidligere avholdte
@@ -69,13 +74,18 @@
            Siden følger det generelle oppsette av nettstedet.</p>
            <img src="mock_up_fugleoversikt.png" alt="mock-up av fugleoversikt">
         <h4>Medlemskap</h4>
-        <p>"Medlemskap" er en side som har til hensikt å informere om hva det betyr å være en 
+        <p>"Medlemskap" er en side som har til hensikt å informere om hva det betyr å være en
            medlem av Norske fugletittere, og å kunne søke om medlemskap. Å søke om medlemskap skal fungere gjennom et skjema som skal være på siden,
            hvor brukeren skriver inn informasjon som navn E-mail, og mer. Når man trykker send på søknadskjemaet så vil det komme opp en varsel om at
            søknaden er sendt, men informasjonen vil ikke bli lagret.
 
         </p>
         <img src="mock_up_medlemskap_tekst.PNG" alt="mock-up av medlemskapside">
+        <h4>Galleri</h4>
+        <p>Siden med fuglegalleriet kommer til å inneholde ett sentrert element. Dette elementet inneholder bilder, der antallet bilder i bredden kommer an på skjermens størrelse. Disse bildene er sortert etter dato lagt til, og kan sendes av brukere til Norske Fugletittere, som legger dem ut på sida.
+
+        </p>
+        <img src="mock_up_galleri.png" alt="mock-up av fuglegalleriet">
       <h3>Minimumskrav: JavaScript</h3>
       <p> Minimum Requirements: The website must include four distinct JavaScript applications
         (for example, rollovers effects on images or menus, user-defined functions, form validation, animations etc.).
@@ -92,17 +102,17 @@
       <h4>dropdown.js</h4>
       <p></p>
       <h4>bildeForvisning.js</h4>
-      <p>bildeForvisning funksjonen skal vise et forhåndsbilde av fuglen som linken fører til. Funksjonen kommer
+        <p>bildeForvisning funksjonen skal vise et forhåndsbilde av fuglen som linken fører til. Funksjonen kommer
         til å bli aktivert med onmouseover og deaktivert med onmouseout eventene. Linken sender this.innerHTML som variable.
         Funksjonen vil si vise en div til høyre for boksen med et img-tag. Funksjonen bruker variablet til funksjonen
         (navnet til fuglen) til å finne "fugl.jpg" og sette det som src.</p>
       <h3>Avansert Javascript</h3>
       <h4>visFugl</h4>
-      <p></p>
+        <p>"visFugl" skal være en JavaScript-funskjon som presenterer informasjon om en fugl på bird library. Den henter informasjon fra en XML-fil som inneholder informasjon om alle fuglene.</p>
       <h4>visArrangement</h4>
-      <p></p>
+        <p>"visArrangement" kommer til å fungere likt som "visFugl", men kommer til å presentere informasjon om tidligere og fremtidige arrangementer.</p>
       <h4>filter</h4>
-      <p>Skal hente inn teksten til et input-tag og sammenligne det med alle fuglene-linkene. Funksjonen skal
+        <p>Skal hente inn teksten til et input-tag og sammenligne det med alle fuglene-linkene. Funksjonen skal
         bare vise de linkene som inneholder strengen fra inputen.</p>
       <h2>Fil struktur</h2>
       <p>
