@@ -1,7 +1,10 @@
   body {
     margin: 0px;
-    background-color: forestgreen;
     font-family: sans-serif, arial, helvetica;
+
+    background-image: url("../img/8637731898_4045183872_z.jpg");
+    background-repeat: repeat;
+
   }
 
   #topBar {
@@ -12,13 +15,13 @@
   #topBar ul {
     list-style-type: none;
 
-    margin-top: -5px;
+    margin-top: -5%;
     padding: 2%;
 
     text-align: center;
     border: solid;
 
-    background-color: yellow;
+    background-color: green;
   }
 
   #topBar li {
@@ -32,7 +35,7 @@
   }
 
   #topBar li:hover {
-    background-color: black;
+    background-color: brown;
   }
 
   #box {
@@ -45,8 +48,6 @@
     border-width: medium;
     border-color: black;
 
-    padding: 10px;
-
     background-color: lightgreen;
   }
 
@@ -58,6 +59,7 @@
   p {
     color: black;
     text-align: left;
+    margin-left: 1%;
   }
 
   #list1 {
@@ -77,23 +79,24 @@
     line-height: 1;
 
     background-color: brown;
-
   }
 
-  #videoOnL {
-    height: auto;
+  #footerdel p {
+    display: inline;
+  }
+
+  #bilde1 {
+    max-height: 500px;
+
     width: 100%;
   }
 
-  #bildeOnS {
+  #bilde2 {
     height: auto;
     width: 100%;
   }
 
   @media only screen and (min-width: 901px) {
-    #bildeOnS {
-      display: none;
-    }
     p {
       font-size: 18px;
       line-height: 1.5;
@@ -101,9 +104,6 @@
   }
 
   @media only screen and (max-width: 900px) {
-    #videoOnL {
-      display: none;
-    }
     p {
       font-size: 16px;
       line-height: 1.25;
