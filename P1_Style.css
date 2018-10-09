@@ -1,0 +1,18 @@
+
+body{
+  background-color: rgb(23, 199, 23);
+  font-family: verdana;
+  width: 60%;
+  margin: auto;
+}
+
+div{
+  border: solid;
+  background-color: lightgray;
+  padding: 100px;
+  padding-top: 50px;
+}
+
+header{
+  text-align: center;
+}
