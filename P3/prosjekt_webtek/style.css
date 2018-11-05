@@ -1,4 +1,4 @@
-body {
+﻿body {
   height: 100%;
   margin: 0px;
   font-family: Verdana, sans-serif, arial, helvetica;
@@ -49,8 +49,30 @@ padding-right: 3%;
 }
 
 
+#mobilmeny {
+    display: none;
+  }
+#mobilknapp {
+  display: none;
+}
+
+/* css for mobiler og enheter med mindre skjermer*/
+@media only screen and (max-width: 1600px) {
+  font-size: 80px;
+  #navBar {
+    display: none;
+  }
+  #mobilknapp {
+    display: block;
+  }
+  #mobilmeny {
+      display: none;
+    }
+}
+
+
+
 #bodyOfSite {
-  min-height: 100%;
 }
 /* css styling for index*/
 
@@ -67,7 +89,6 @@ padding-right: 3%;
 
 /* css styling for arrangement siden*/
 .arrangementer_wrap {
-  min-height: inherit;
   text-align: left;
   padding-top: 5%;
   padding-bottom: 5%;
