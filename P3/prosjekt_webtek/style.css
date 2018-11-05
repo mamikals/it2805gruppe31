@@ -14,13 +14,19 @@ body {
     position: relative;
   }
 
+footer{
+  position:absolute;
+  bottom: 0px;
+}
+
 
 #coverPhoto {
 	  width: 100%;
 	  height: auto;
     margin: 0px;
+    display: block;
   }
-  #logo {
+#logo {
       position: absolute;
       top: 50%;
       left: 50%;
