@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arrangementer>
+  <arrangement>
+    <navn>Fuglequiz</navn>
+    <sted>Fugletitterveien 2</sted>
+    <dato>13.12.2018</dato>
+    <tid>1800-2100</tid>
+    <info>Dette blir siste quiz før jul! det Det vil bli satt
+    av tid til julekos og sosialt samvær</info>
+    <bilde></bilde>
+  </arrangement>
+
+  <arrangement>
+    <navn>Vinterfotografering</navn>
+    <sted>Fugletårnet</sted>
+    <dato>05.01.2019</dato>
+    <tid>1300-1500</tid>
+    <info>Mer info kommer når datoen nærmer seg. Arrangementet er
+    væravhengig.</info>
+    <bilde></bilde>
+  </arrangement>
+
+  <arrangement>
+    <navn>Fuglequiz</navn>
+    <sted>Fugletitterveien 2</sted>
+    <dato>07.11.2018</dato>
+    <tid>1800-2100</tid>
+    <info>Ukens tema er afrikanske fugler og trekkfugler.</info>
+    <bilde></bilde>
+  </arrangement>
+
+  <arrangement>
+    <navn>Fotoredigeringskurs</navn>
+    <sted>Fugletitterveien 2</sted>
+    <dato>25.10.2018</dato>
+    <tid>1800-2100</tid>
+    <info>Vi kommer til å jobbe med grunnleggende ferdigheter knyttet
+    til det å bruke Adobe PS, som å beskjære bilder, komprimere bilder, og enkle
+    endringer i farger. </info>
+    <bilde></bilde>
+  </arrangement>
+</arrangementer>

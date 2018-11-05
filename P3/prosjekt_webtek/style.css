@@ -1,0 +1,90 @@
+body {
+  height: 100%;
+  margin: 0px;
+  font-family: Verdana, sans-serif, arial, helvetica;
+  font-size: 16px;
+}
+
+ a {
+  color: #000000;
+}
+
+.slideshow {
+    margin: 0px;
+    position: relative;
+  }
+
+
+#coverPhoto {
+	  width: 100%;
+	  height: auto;
+    margin: 0px;
+  }
+  #logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+#navBar {
+  position: sticky;
+  top: 0px;
+  padding: 10px;
+  margin: 0px;
+  border: 5px solid #C5CACA;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+#navBar > a:hover {
+  color: #FFFFFF;
+  background-color: #ACA9A8;
+}
+
+#navBar > * {
+padding-left: 3%;
+padding-right: 3%;
+}
+
+
+#bodyOfSite {
+  min-height: 100%;
+}
+/* css styling for index*/
+
+
+/* css styling for galleri*/
+
+
+/* css styling for blimedlem*/
+
+
+/* css styling for fugleindeks/blibliotek*/
+
+
+
+/* css styling for arrangement siden*/
+.arrangementer_wrap {
+  min-height: inherit;
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background: rgba(192,192,192,0.3) /* Grå bakgrunn med 30% gjennomsiktighet  */
+}
+/* css styling for footer elementet */
+footer {
+  padding: 10px;
+  margin-bottom: - 20px;
+  border: 5px solid #C5CACA;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+footer > * {
+  display: inline-block;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
