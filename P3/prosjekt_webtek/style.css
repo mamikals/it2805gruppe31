@@ -14,11 +14,6 @@
     position: relative;
   }
 
-footer{
-  position:absolute;
-  bottom: 0px;
-}
-
 
 #coverPhoto {
 	  width: 100%;
@@ -33,6 +28,16 @@ footer{
       transform: translate(-50%, -50%);
     }
 
+  .button {
+      background-color: #A0C0BE; /* lyseblå */
+      border: none;
+      color: #FFFFFF;
+      padding: 15px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 24px;
+    }
+
 #navBar {
   position: sticky;
   top: 0px;
@@ -40,7 +45,7 @@ footer{
   margin: 0px;
   border: 5px solid #C5CACA;
   background-color: #FFFFFF;
-  text-align: center;
+  text-align: left;
 }
 
 #navBar > a:hover {
@@ -53,16 +58,17 @@ padding-left: 3%;
 padding-right: 3%;
 }
 
-
-#mobilmeny {
-    display: none;
-  }
 #mobilknapp {
+  position: fixed;
+  inline;
   display: none;
 }
+#navBar {
+    display: none;
+  }
 
 /* css for mobiler og enheter med mindre skjermer*/
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-device-width: 600px) {
   font-size: 80px;
   #navBar {
     display: none;
@@ -70,9 +76,6 @@ padding-right: 3%;
   #mobilknapp {
     display: block;
   }
-  #mobilmeny {
-      display: none;
-    }
 }
 
 
@@ -91,8 +94,6 @@ padding-right: 3%;
 /* css styling for fugleindeks/blibliotek*/
 
 
-/* css styling for fugleinfo */
-#
 
 /* css styling for arrangement siden*/
 .arrangementer_wrap {
@@ -100,6 +101,16 @@ padding-right: 3%;
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background: rgba(192,192,192,0.3) /* Grå bakgrunn med 30% gjennomsiktighet  */
+}
+
+.arrangement_wrap {
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
   margin-left: 20%;
   margin-right: 20%;
   background: rgba(192,192,192,0.3) /* Grå bakgrunn med 30% gjennomsiktighet  */

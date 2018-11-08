@@ -16,7 +16,7 @@ function linktilarrangement(xml) {
     let dato = xmlDoc.getElementsByTagName("dato")[x].childNodes[0].nodeValue;
     temp.innerText = dato + " " +navn ;
     temp.style = "display:block;margin-bottom:5px;";
-    temp.href = "visArrangement.html?arrangement=" +navn;
+    temp.href = "arrangement.html?arrangement=" +navn;
     innhold.append(temp);
   }
 }
