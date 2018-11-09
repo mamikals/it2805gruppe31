@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="no">
+<head>
+    <meta charset="utf-8">
+    <title>Medlemskap</title>
+    <!-- husk å legge til tittel. -->
+    <link rel="icon" href="img/favicon.png"><!-- favicon -->
+    <link rel="stylesheet" href="style.css"><!-- her skal det linkes til stylesheet -->
+
+</head>
+<body>
+    <div class="slideshow">
+      <img id="coverPhoto" src="img/cover.jpg" alt="Bilde av fugler"> <!-- blidet som vises hvis scriptet som skal spille av forskjellige bilder ikke loader -->
+        <div id="logo"> <!-- logo som skal ligge over slideshowet/cover bildet-->
+          <img src="img/logo.png" alt="Norske fugletittere">
+        </div>
+    </div>
+    <div id="navBar">
+      <a href="index.html">Hjem</a>
+      <a href="arrangementoversikt.html">Arrangementer</a>
+      <a href="galleri.html">Galleri</a>
+      <a href="fugleoversikt.html">Fugleoversikt</a>
+      <a href="medlemskap.html">Bli medlem</a>
+    </div>
+    <button id="mobilknapp" onclick="dropdown()">Meny</button>
+    <div id="mobilmeny">
+      <a href="index.html">Hjem</a>
+      <a href="arrangementoversikt.html">Arrangementer</a>
+      <a href="galleri.html">Galleri</a>
+      <a href="fugleoversikt.html">Fugleoversikt</a>
+      <a href="medlemskap.html">Bli medlem</a>
+    </div>
+    <div id="bodyOfSite"> <!-- sett inn din valgte bakgrunn! -->
+
+      <!-- Her skal du plassere din kode for den bestemte siden. legg koden i en div som du bruker som wrap -->
+        <div class="one">
+            <div id="div_header">
+                <header>
+                    <h1>Medlemskap</h1>
+                </header>
+            </div>
+            <div id="div_tekst">
+                <p>
+                    Et medlemskap i Norske fugletittere vil gi deg mulighet til å legge ut egne bilder på nettsiden, og du vil
+                    få et månedlig nyhetsbrev. I tillegg så vil medlemskapet støtte Norske Fugletittere, og bidra til at vi blir 
+                    en større organisasjon.
+                </p>
+            </div>
+            <div id="div_form">
+                <form>
+                    <fieldset id="skjema">
+                    <legend id="top">Medlemskapsskjema</legend>
+
+                    <label for="name">Navn: </label> 
+                    <br>
+                    <input type="text" name="name" id="name" class="inputfield" placeholder="Navn">
+                    <br>
+                        
+                    <label for="gender">Kjønn: </label>
+                    <br>
+                    <label for="male">Mann: </label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="female">Kvinne: </label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <br>
+
+                    <label for="birth">Fødselsdato: </label>
+                    <br>
+                    <input type="date" name="birth" id="birth" class="inputfield">
+                    <br>
+
+                    <label for="email">E-mail: </label>
+                    <br>
+                    <input type="email" name="email"  id="email" class="inputfield" placeholder="E-mail">
+                    <br>
+                
+                    <label for="adresse">Adresse: </label>
+                    <br>
+                    <input type="text" name="adresse" id="adresse" class="inputfield" placeholder="Adresse">
+                    <br>
+                
+                    <label for="hear_from">Hvor hørte du om oss først: </label>
+                    <br>
+                    <textarea name="hear_from" id="hear_from" cols="30" class="inputfield"></textarea>
+                    <br>
+
+                    <input type="button" name="submit" value="Send inn" id="submit">
+                    
+                    </fieldset>
+                </form>
+            </div>
+            <div id="div_form_submitted" hidden>
+                <p>Medlemskapsskjemaet ditt er sendt inn.</p>
+            </div>
+        </div>
+            <footer>
+                <a href="mailto:fugletittere@fugletitting.no">fugletittere@fugletitting.no</a>
+                <p>Fugletitterveien 2, 7044 Trondheim Norge</p>
+                <a href="https://www.facebook.com/fugletitterne" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/fugletittere" target="_blank">Instagram</a>
+            </footer>
+        <script src="medlemsscript.js"></script>
+        <script src="dropdown.js"></script>
+        <!-- legg til alle relevante javascript her. -->
+    </body>
+</html>

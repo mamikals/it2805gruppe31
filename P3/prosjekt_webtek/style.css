@@ -1,6 +1,6 @@
-﻿body {
+body {
   height: 100%;
-  margin: 0px;
+  margin: 0%;
   font-family: Verdana, sans-serif, arial, helvetica;
   font-size: 16px;
 }
@@ -28,24 +28,15 @@
       transform: translate(-50%, -50%);
     }
 
-  .button {
-      background-color: #A0C0BE; /* lyseblå */
-      border: none;
-      color: #FFFFFF;
-      padding: 15px 32px;
-      text-align: center;
-      display: inline-block;
-      font-size: 24px;
-    }
-
 #navBar {
   position: sticky;
+  z-index: 1;
   top: 0px;
   padding: 10px;
   margin: 0px;
   border: 5px solid #C5CACA;
   background-color: #FFFFFF;
-  text-align: left;
+  text-align: center;
 }
 
 #navBar > a:hover {
@@ -58,17 +49,16 @@ padding-left: 3%;
 padding-right: 3%;
 }
 
-#mobilknapp {
-  position: fixed;
-  inline;
-  display: none;
-}
-#navBar {
+
+#mobilmeny {
     display: none;
   }
+#mobilknapp {
+  display: none;
+}
 
 /* css for mobiler og enheter med mindre skjermer*/
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-width: 1600px) {
   font-size: 80px;
   #navBar {
     display: none;
@@ -76,12 +66,12 @@ padding-right: 3%;
   #mobilknapp {
     display: block;
   }
+  #mobilmeny {
+      display: none;
+    }
 }
 
 
-
-#bodyOfSite {
-}
 /* css styling for index*/
 
 
@@ -89,6 +79,69 @@ padding-right: 3%;
 
 
 /* css styling for blimedlem*/
+.one {
+  background-image: url(img/Medlemskapbakgrunn.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 20px;
+}
+
+#div_header{
+  position: relative;
+  left: 40%;
+  height: 100px;
+  width: 300px;
+  text-align: center;
+}
+
+#div_tekst{
+  position: relative;
+  left: 15%;
+  top: 25%;
+  width: 400px;
+  height: 200px;
+}
+
+#skjema, #div_form_submitted{
+  position: relative;
+  left: 50%;
+  top: 40%;
+  width: 400px;
+  height: 600px;
+}
+
+
+#skjema, #div_tekst {
+  background: rgba(192,192,192,0.3);
+}
+
+#top {
+  text-align: center;
+}
+
+#male, #female {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 15px;
+}
+
+.inputfield, #submit {
+  margin-bottom: 35px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#submit {
+  font-size: 20px;
+}
+
 
 
 /* css styling for fugleindeks/blibliotek*/
@@ -101,16 +154,6 @@ padding-right: 3%;
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 20%;
-  margin-left: 20%;
-  margin-right: 20%;
-  background: rgba(192,192,192,0.3) /* Grå bakgrunn med 30% gjennomsiktighet  */
-}
-
-.arrangement_wrap {
-  text-align: left;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  padding-left: 10%;
   margin-left: 20%;
   margin-right: 20%;
   background: rgba(192,192,192,0.3) /* Grå bakgrunn med 30% gjennomsiktighet  */
