@@ -1,28 +1,31 @@
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
+var fuglXML = new XMLHttpRequest();
+fuglXML.open("GET", "../xml/fugl.xml", true);
+fuglXML.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        myFunction(this);
+        hentFugl(this);
     }
 };
-xhttp.open("GET", "../xml/fugl.xml", true);
-xhttp.send();
+fuglXML.setRequestHeader("text", "text/xml");
+fuglXML.send();
 
-function myFunction(xml) {
+var url_string = window.location.href; //window.location.href
+var url = new URL(url_string);
+var c = url.searchParams.get("fugl");
+console.log(c);
+
+function hentFugl(xml) {
   var xmlDoc = xml.responseXML;
-  par = document.getElementById("fugleInfoText")
-  for (var x = 0; x<=3; x++){
-    const temp = document.createElement("a");
-    let navn = xmlDoc.getElementsByTagName("fugl")[x].childNodes[0].nodeValue;
-    temp.innerText = navn;
-    temp.style = "display:block;margin-bottom:5px;"
-    temp.href = "fugleinfo.html?fugl=" +navn
-    par.append(temp)
-  }
-}
-
-function fInfo() {
-  for (i = 0; i<10; i++) {
-    console.log("kill me")
+  console.log(xmlDoc)
+  content = document.getElementById("fugleliste")
+  var len = xmlDoc.getElementsByTagName("fugl").length-1;
+  for (var x = 0; x <= len; x++) {
+    let navn = xmlDoc.getElementsByTagName("navn")[x].childNodes[0].nodeValue;
+    console.log(navn)
+    if (navn.toUpperCase() == c.toUpperCase()) {
+      document.getElementById('fuglTitle').innerText = xmlDoc.getElementsByTagName("navn")[x].childNodes[0].nodeValue
+      /*document.getElementById('fuglInfo').innerText = xmlDoc.getElementsByTagName("navn")[x].childNodes[2].nodeValue*/
+      document.getElementById('fugleInfoImg').src = ("../birdimg/" + xmlDoc.getElementsByTagName("navn")[x].childNodes[0].nodeValue.toLowerCase() + ".jpg")
+    }
   }
 
 }
