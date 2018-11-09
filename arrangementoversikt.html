@@ -5,25 +5,42 @@
     <title>Arrangementoversikt</title>
     <!-- husk å legge til tittel. -->
 <link rel="icon" href="img/favicon.png"> <!-- favicon -->
-<link rel="stylesheet" href="..."> <!-- her skal det linkes til stylesheet -->
+<link rel="stylesheet" href="style.css"> <!-- her skal det linkes til stylesheet -->
 
   </head>
   <body>
     <div class="slideshow">
-      <img id="coverPhoto" src= "..." alt= "Bilde av en fugl" > <!-- blidet som vises hvis scriptet som skal spille av forskjellige bilder ikke loader -->
+      <img id="coverPhoto" src= "img/coverphoto_4.jpg" alt= "Bilde av fugler" > <!-- blidet som vises hvis scriptet som skal spille av forskjellige bilder ikke loader -->
         <div id="logo"> <!-- logo som skal ligge over slideshowet/cover bildet-->
           <img src="img/logo.png" alt="Norske fugletittere" />
         </div>
     </div>
-    <div class="navBar">
-
+    <button id= "mobilknapp" onclick="dropdown()">Meny</button>
+    <div id="navBar">
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="arrangementoversikt.html">Arrangementer</a></li>
+        <li><a href="galleri.html">Galleri</a></li>
+        <li><a href="fugleoversikt.html">fugleoversikt</a></li>
+        <li><a href="medlemskap.html">Bli medlem</a></li>
+      </ul>
     </div>
-      <!-- Her skal du plassere din kode for den bestemte siden.Legg den i en div -->
-        <div id="arrangementer"></div>
-    <footer></footer>
-    <script src="visArrangement.js"></script>
+        <div id="bodyOfSite" style="background-image:url(img/background_arrangement.jpg)" > <!-- sett inn egen bakgrunn! -->
+  <!-- Her skal du plassere din kode for den bestemte siden.Legg den i en div -->
 
-    <!--<script src=""></script>-->
+       <div class="arrangementer_wrap">
+         <h1>Arrangementer</h1>
+         <div id="arrangementer"></div>
+       </div>
+        </div>
+    <footer>
+<a href="mailto:fugletittere@fugletitting.no">fugletittere@fugletitting.no</a>
+<p>Fugletitterveien 2, 7044 Trondheim Norge</p>
+<a href="https://www.facebook.com/fugletitterne" target="_blank">Facebook</a>
+<a href="https://www.instagram.com/fugletittere" target="_blank">Instagram</a>
+    </footer>
+    <script src="visArrangement.js"></script>
+    <script src="dropdown.js"></script>
 
     <!-- legg til alle relevante javascript her. -->
 
