@@ -1,27 +1,34 @@
-/*For top-bilde*/
-const bilde1 = document.getElementById('bilde1');
-bilde1.src = "img/slider0.jpg";
+/*For slideshow*/
+const slideShow = document.getElementById('coverPhoto');
+var count1 = 0;
+var slideList = ["img/coverphoto_1.jpg", "img/coverphoto_2.jpg", "img/coverphoto_3.jpg", "img/coverphoto_4.jpg"];
 
-function slide() {
-  bilde1.src = '';
+function slideFunc() {
+  count1 += 1;
+
+  slideShow.src = slideList[count1]
+
+  if (count1 == 3) {
+    count1 = -1;
+  }
 }
 
-setInterval(slide, 5000);
+setInterval(slideFunc, 8000);
 
 /*For fuglen som flyr avgårde*/
-const bird = document.getElementById('bird');
+const bird = document.getElementById('birdFlyAway');
 bird.src = 'img/birdUp.jpg';
 
-var count = 0;
+var count2 = 0;
 var moveX = 84;
 var moveY = 0;
 
 bird.addEventListener('mouseover', moveBird);
 
 function moveBird() {
-  count++
+  count2 += 1
 
-  if (count % 2 != 0) {
+  if (count2 % 2 != 0) {
     bird.src = 'img/birdDown.jpg';
   }
   else {
@@ -29,7 +36,7 @@ function moveBird() {
   }
 
   moveX += 1;
-  moveY += count;
+  moveY += count2;
 
   strX = moveX.toString() + '%';
   strY = moveY.toString() + 'px';
@@ -37,7 +44,7 @@ function moveBird() {
   bird.style.left = strX;
   bird.style.bottom = strY;
 
-  if (count == 50) {
+  if (count2 == 45) {
     bird.style.display = 'none';
     alert('Den sjeldene fuglen fløy avgårde.\nFikk du tatt et bilde?');
   }

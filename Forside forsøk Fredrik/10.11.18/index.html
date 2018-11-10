@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fuglekikking NTNU's forside</title><!-- evt. annen tittel -->
+    <link rel="icon" href="img/favicon.png"><!-- favicon -->
+    <link rel="stylesheet" type="text/css" href="style.css"><!-- her skal det linkes til stylesheet -->
+  </head>
+
+  <body>
+    <div class="slideshow">
+      <img id="coverPhoto" src="img/coverphoto_1.jpg" alt= "Bilde av fugler"> <!-- blidet som vises hvis scriptet som skal spille av forskjellige bilder ikke loader -->
+      <div id="logo"> <!-- logo som skal ligge over slideshowet/cover bildet-->
+        <img src="img/logo.png" alt="Norske fugletittere">
+      </div>
+    </div>
+
+    <!-- LAGT ALT I LISTER, TROR DET ER SÅNN DET SKAL GJØRES?-->
+    <div id="navBar">
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="arrangementoversikt.html">Arrangementer</a></li>
+        <li><a href="galleri.html">Galleri</a></li>
+        <li><a href="fugleoversikt.html">Fugleoversikt</a></li>
+        <li><a href="medlemskap.html">Bli medlem</a></li>
+      </ul>
+    </div>
+
+    <!-- LAGT ALT I LISTER, TROR DET ER SÅNN DET SKAL GJØRES?-->
+    <button id="mobilknapp" onclick="dropdown()">Meny</button>
+    <div id="mobilmeny">
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="arrangementoversikt.html">Arrangementer</a></li>
+        <li><a href="galleri.html">Galleri</a></li>
+        <li><a href="fugleoversikt.html">Fugleoversikt</a></li>
+        <li><a href="medlemskap.html">Bli medlem</a></li>
+      </ul>
+    </div>
+
+    <!-- LA ALT I CSS'EN!-->
+    <div id="bodyOfSite"> <!-- sett inn din valgte bakgrunn! -->
+
+      <!-- Her skal du plassere din kode for den bestemte siden. legg koden i en div som du bruker som wrap -->
+      <section id="box">
+
+        <h2>Velkommen til Fuglekikking NTNU</h2>
+
+        <p>Nyhetsfeed</p>
+        <ul id="listIndex">
+          <li>Sjelden fugl sett ved Nidarosdomen</li>
+          <li>Nye fuglekikkings t-skjorter ute nå!</li>
+          <li>På utkikk etter jaktrifle? Kjøp dette kameraet i stede. Nå 20% rabatt!</li>
+        </ul>
+
+        <p>Månedens bilde:</p>
+        <img id="månedensBilde" src="img/Månedens bilde.jpg" alt="Bildet kommer snart">
+
+        <p>Litt om fuglens historie.</p>
+        <p>Hvordan oppsto fuglekikking?</p>
+        <p>De orginale fuglekikkerene, steinalderboerne.</p>
+
+        <img id='birdFlyAway'>
+      </section>
+
+    </div>
+
+    <footer>
+      <a href="mailto:fugletittere@fugletitting.no">fugletittere@fugletitting.no</a>
+      <p>Fugletitterveien 2, 7044 Trondheim Norge</p>
+      <a href="https://www.facebook.com/fugletitterne" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/fugletittere" target="_blank">Instagram</a>
+
+      <script src="dropdown.js"></script>
+      <script src="jsForside.js"></script>
+    </footer>
+    <!-- legg til alle relevante javascript her. -->
+
+  </body>
+</html>

@@ -1,10 +1,7 @@
 body {
   margin: 0px;
   font-family: sans-serif, arial, helvetica;
-
-  background-image: url("../img/8637731898_4045183872_z.jpg");
-  background-repeat: repeat;
-
+  background-color: gray;
 }
 
 #topBar {
@@ -15,7 +12,8 @@ body {
 #topBar ul {
   list-style-type: none;
 
-  margin-top: -5%;
+  margin-top: -1%;
+  margin-bottom: -1%;
   padding: 2%;
 
   text-align: center;
@@ -36,6 +34,14 @@ body {
 
 #topBar li:hover {
   background-color: brown;
+}
+
+#forBackground {
+  background-image: url("../img/8637731898_4045183872_z.jpg");
+  background-repeat: round;
+
+  padding: 1%;
+  width: 100%;
 }
 
 #box {
@@ -62,7 +68,7 @@ p {
   margin-left: 1%;
 }
 
-#list1 {
+#list {
   color: black;
   list-style-type: square;
   margin: 5%;
@@ -87,16 +93,6 @@ footer {
   margin-right: 5%;
 }
 
-#bilde1 {
-  max-height: 500px;
-  width: 100%;
-}
-
-#bilde2 {
-  height: auto;
-  width: 100%;
-}
-
 @media only screen and (min-width: 901px) {
   p {
     font-size: 18px;
@@ -111,7 +107,36 @@ footer {
   }
 }
 
-#bird {
+#slideShow {
+  max-height: 600px;
+  width: 100%;
+}
+
+#slideShow {
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+
+  animation-name: fade;
+  animation-timing-function: linear;
+}
+
+@keyframes fade {
+  0% {opacity: 0; transform: translate(75%);}
+  2% {opacity: 0.15;}
+  8% {transform: translate(0%);}
+  10% {opacity: 1;}
+  90% {opacity: 1;}
+  92% {transform: translate(0%);}
+  98% {opacity: 0.15;}
+  100% {opacity: 0; transform: translate(-75%);}
+}
+
+#bilde {
+  height: auto;
+  width: 100%;
+}
+
+#birdFlyAway {
   width: 15%;
   height: 10%;
 
