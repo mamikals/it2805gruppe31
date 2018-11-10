@@ -6,7 +6,7 @@ fuglXML.onreadystatechange = function() {
         fuglLastetFerdig(this);
     }
 };
-fuglXML.open("GET", "xml/fugl.xml", true);
+fuglXML.open("GET", "fugl.xml", true);
 fuglXML.send();
 
 function fuglLastetFerdig(xml) {
@@ -17,7 +17,7 @@ function fuglLastetFerdig(xml) {
     const tempA = document.createElement("a");
     let navn = innhold.getElementsByTagName("navn")[x].childNodes[0].nodeValue;
     tempA.innerText = navn;
-    tempA.href = "html/visFugl.html?fugl=" +navn;
+    tempA.href = "visFugl.html?fugl=" +navn;
     oppdaterFarge(tempA, x%2)
     liste.append(tempA);
   }
