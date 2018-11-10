@@ -21,6 +21,24 @@ body {
     margin: 0px;
     display: block;
   }
+
+  /*SLIDESHOW*/
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+
+  animation-name: fade;
+  animation-timing-function: linear;
+}
+
+@keyframes fade {
+  0% {opacity: 0; transform: translate(-95%);}
+  8% {opacity: 1;}
+  10% {transform: translate(0%);}
+  90% {transform: translate(0%);}
+  92% {opacity: 1;}
+  100% {opacity: 0; transform: translate(-95%);}
+}
+/*END OF: SLIDESHOW*/
 #logo {
       position: absolute;
       top: 50%;
@@ -28,18 +46,33 @@ body {
       transform: translate(-50%, -50%);
     }
 
-#navBar {
-  position: sticky;
-  z-index: 1;
-  top: 0px;
-  padding: 10px;
-  margin: 0px;
-  border: 5px solid #C5CACA;
-  background-color: #FFFFFF;
-  text-align: center;
+
+
+  #navBar {
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+    padding: 0px;
+    margin: 0px;
+    border: 5px solid #C5CACA;
+    background-color: #FFFFFF;
+    text-align: center;
+    }
+
+.navlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    line-height: 1.5;
 }
 
-#navBar > a:hover {
+.navlink {
+  padding: 18px;
+}
+
+
+ .navlink:hover {
   color: #FFFFFF;
   background-color: #ACA9A8;
 }
@@ -49,31 +82,105 @@ padding-left: 3%;
 padding-right: 3%;
 }
 
-
-#mobilmeny {
-    display: none;
-  }
-#mobilknapp {
+#mobilknapp{
   display: none;
-}
-
-/* css for mobiler og enheter med mindre skjermer*/
-@media only screen and (max-width: 1600px) {
-  font-size: 80px;
-  #navBar {
-    display: none;
-  }
-  #mobilknapp {
-    display: block;
-  }
-  #mobilmeny {
-      display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  border: 5px solid #C5CACA;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
     }
-}
 
+
+!  @media screen and (max-width: 600) {
+    body{
+      font-size: 80px;
+    }
+
+      #mobilknapp {
+          display: block;
+          position: fixed;
+          top: 0;
+          left: 0;
+          background-color: #FFFFFF; /* lyseblå */
+          border: 5px solid #C5CACA;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+        }
+
+    #navBar {
+          position: fixed;
+          display: none;
+          bottom: : 0;
+          left: 0;
+          display: none;
+          z-index: 1;
+          top: 0px;
+          padding: 10px;
+          margin: 0px;
+          height: 100%
+          border: 5px solid #C5CACA;
+          background-color: #FFFFFF;
+          text-align: left;
+    }
+  }
 
 /* css styling for index*/
 
+#forBackGround {
+  background-repeat: round;
+  /*SKJØNNER IKKE HVORFOR, MEN PADDING TO MAKE IT STRECH RIGHT*/
+  padding: 1%;
+}
+
+#box {
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+
+  border: solid;
+  border-width: medium;
+  border-color: black;
+
+  background: rgba(192,192,192,0.9) /* Grå bakgrunn med 10% gjennomsiktighet  */
+}
+
+#box h2 {
+  text-align: center;
+}
+
+#box p {
+  text-align: left;
+  margin-left: 2%;
+}
+
+#listIndex {
+  list-style-type: square;
+  margin: 5%;
+}
+
+#månedensBilde {
+  height: auto;
+  width: 100%;
+}
+
+#birdFlyAway {
+  width: 15%;
+  height: 10%;
+
+  position: relative;
+  left: 84%;
+  bottom: 0%;
+}
 
 /* css styling for galleri*/
 .gallery {
@@ -159,6 +266,17 @@ padding-right: 3%;
 
 /* css styling for fugleindeks/blibliotek*/
 
+.fugleOversikt_wrap {
+  min-height: inherit;
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background: rgba(192,192,192,0.3) /* Grå bakgrunn med 30% gjennomsiktighet  */
+}
+
 #sookFugl, #fugleListe {
   width: 35%;
   min-width: 120px;
@@ -225,7 +343,17 @@ margin-bottom: 30px;
   text-align: left;
   padding-top: 5%;
   padding-bottom: 5%;
-  padding-left: 20%;
+  padding-left: 15%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background: rgba(192,192,192,0.3) /* Grå bakgrunn med 30% gjennomsiktighet  */
+}
+
+.arrangement_wrap {
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
   margin-left: 20%;
   margin-right: 20%;
   background: rgba(192,192,192,0.3) /* Grå bakgrunn med 30% gjennomsiktighet  */

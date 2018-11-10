@@ -9,27 +9,22 @@
 
 </head>
 <body>
-    <div class="slideshow">
-      <img id="coverPhoto" src="img/cover.jpg" alt="Bilde av fugler"> <!-- blidet som vises hvis scriptet som skal spille av forskjellige bilder ikke loader -->
-        <div id="logo"> <!-- logo som skal ligge over slideshowet/cover bildet-->
-          <img src="img/logo.png" alt="Norske fugletittere">
-        </div>
-    </div>
-    <div id="navBar">
-      <a href="index.html">Hjem</a>
-      <a href="arrangementoversikt.html">Arrangementer</a>
-      <a href="galleri.html">Galleri</a>
-      <a href="fugleoversikt.html">Fugleoversikt</a>
-      <a href="medlemskap.html">Bli medlem</a>
-    </div>
-    <button id="mobilknapp" onclick="dropdown()">Meny</button>
-    <div id="mobilmeny">
-      <a href="index.html">Hjem</a>
-      <a href="arrangementoversikt.html">Arrangementer</a>
-      <a href="galleri.html">Galleri</a>
-      <a href="fugleoversikt.html">Fugleoversikt</a>
-      <a href="medlemskap.html">Bli medlem</a>
-    </div>
+  <div class="slideshow">
+    <img id="coverPhoto" src= "img/coverphoto_4.jpg" alt= "Bilde av fugler" > <!-- blidet som vises hvis scriptet som skal spille av forskjellige bilder ikke loader -->
+      <div id="logo"> <!-- logo som skal ligge over slideshowet/cover bildet-->
+        <img src="img/logo.png" alt="Norske fugletittere" />
+      </div>
+  </div>
+  <button id= "mobilknapp" onclick="dropdown()">Meny</button>
+  <div id="navBar">
+    <ul>
+      <li class="navlist" ><a class="navlink" href="index.html">Hjem</a></li>
+      <li class="navlist"><a class="navlink" href="arrangementoversikt.html">Arrangementer</a></li>
+      <li class="navlist"><a class="navlink" href="galleri.html">Galleri</a></li>
+      <li class="navlist"><a class="navlink" href="fugleoversikt.html">Fugleoversikt</a></li>
+      <li class="navlist"><a class="navlink" href="medlemskap.html">Bli medlem</a></li>
+    </ul>
+  </div>
     <div id="bodyOfSite"> <!-- sett inn din valgte bakgrunn! -->
 
       <!-- Her skal du plassere din kode for den bestemte siden. legg koden i en div som du bruker som wrap -->
@@ -42,7 +37,7 @@
             <div id="div_tekst">
                 <p>
                     Et medlemskap i Norske fugletittere vil gi deg mulighet til å legge ut egne bilder på nettsiden, og du vil
-                    få et månedlig nyhetsbrev. I tillegg så vil medlemskapet støtte Norske Fugletittere, og bidra til at vi blir 
+                    få et månedlig nyhetsbrev. I tillegg så vil medlemskapet støtte Norske Fugletittere, og bidra til at vi blir
                     en større organisasjon.
                 </p>
             </div>
@@ -51,11 +46,11 @@
                     <fieldset id="skjema">
                     <legend id="top">Medlemskapsskjema</legend>
 
-                    <label for="name">Navn: </label> 
+                    <label for="name">Navn: </label>
                     <br>
                     <input type="text" name="name" id="name" class="inputfield" placeholder="Navn">
                     <br>
-                        
+
                     <label for="gender">Kjønn: </label>
                     <br>
                     <label for="male">Mann: </label>
@@ -73,19 +68,19 @@
                     <br>
                     <input type="email" name="email"  id="email" class="inputfield" placeholder="E-mail">
                     <br>
-                
+
                     <label for="adresse">Adresse: </label>
                     <br>
                     <input type="text" name="adresse" id="adresse" class="inputfield" placeholder="Adresse">
                     <br>
-                
+
                     <label for="hear_from">Hvor hørte du om oss først: </label>
                     <br>
                     <textarea name="hear_from" id="hear_from" cols="30" class="inputfield"></textarea>
                     <br>
 
                     <input type="button" name="submit" value="Send inn" id="submit">
-                    
+
                     </fieldset>
                 </form>
             </div>

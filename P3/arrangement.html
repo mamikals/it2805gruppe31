@@ -2,7 +2,7 @@
 <html lang="no" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Arrangementoversikt</title>
+    <title>Arrangement</title>
     <!-- husk å legge til tittel. -->
 <link rel="icon" href="img/favicon.png"> <!-- favicon -->
 <link rel="stylesheet" href="style.css"> <!-- her skal det linkes til stylesheet -->
@@ -18,19 +18,24 @@
     <button id= "mobilknapp" onclick="dropdown()">Meny</button>
     <div id="navBar">
       <ul>
-        <li><a href="index.html">Hjem</a></li>
-        <li><a href="arrangementoversikt.html">Arrangementer</a></li>
-        <li><a href="galleri.html">Galleri</a></li>
-        <li><a href="fugleoversikt.html">fugleoversikt</a></li>
-        <li><a href="medlemskap.html">Bli medlem</a></li>
+        <li class="navlist" ><a class="navlink" href="index.html">Hjem</a></li>
+        <li class="navlist"><a class="navlink" href="arrangementoversikt.html">Arrangementer</a></li>
+        <li class="navlist"><a class="navlink" href="galleri.html">Galleri</a></li>
+        <li class="navlist"><a class="navlink" href="fugleoversikt.html">Fugleoversikt</a></li>
+        <li class="navlist"><a class="navlink" href="medlemskap.html">Bli medlem</a></li>
       </ul>
     </div>
         <div id="bodyOfSite" style="background-image:url(img/background_arrangement.jpg)" > <!-- sett inn egen bakgrunn! -->
-  <!-- Her skal du plassere din kode for den bestemte siden.Legg den i en div -->
+  <!-- Her skal du plassere din kode for den bestemte siden.Legg den i en div som du bruker som wrap-->
 
-       <div class="arrangementer_wrap">
-         <h1>Arrangementer</h1>
-         <div id="arrangementer"></div>
+       <div class="arrangement_wrap">
+         <h2 id= "navn_arr"></h2>
+         <p id = "dato_arr"></p>
+         <p id = "tid_arr"></p>
+         <p id = "sted_arr"></p>
+         <p id = "info_arr"></p>
+         <div id="bilde_arr"></div>
+
        </div>
         </div>
     <footer>
@@ -39,8 +44,10 @@
 <a href="https://www.facebook.com/fugletitterne" target="_blank">Facebook</a>
 <a href="https://www.instagram.com/fugletittere" target="_blank">Instagram</a>
     </footer>
-    <script src="visArrangement.js"></script>
+    <script src="hentearrangement.js"></script>
     <script src="dropdown.js"></script>
+    <script src="jsForside.js"></script>
+    <!--<script src=""></script>-->
 
     <!-- legg til alle relevante javascript her. -->
 

@@ -22,8 +22,8 @@ function hentFugl(xml) {
     let navn = xmlDoc.getElementsByTagName("navn")[x].childNodes[0].nodeValue;
     console.log(navn)
     if (navn.toUpperCase() == c.toUpperCase()) {
-      document.getElementById('fuglTitle').innerText = xmlDoc.getElementsByTagName("navn")[x].childNodes[0].nodeValue;
-      document.getElementById('fuglInfo').innerText = xmlDoc.getElementsByTagName("tekst")[x].childNodes[0].nodeValue;
+      document.getElementById('fuglTitle').innerText = xmlDoc.getElementsByTagName("navn")[x].childNodes[0].nodeValue
+      /*document.getElementById('fuglInfo').innerText = xmlDoc.getElementsByTagName("navn")[x].childNodes[2].nodeValue*/
       document.getElementById('fugleInfoImg').src = ("../birdimg/" + xmlDoc.getElementsByTagName("navn")[x].childNodes[0].nodeValue.toLowerCase() + ".jpg")
     }
   }
