@@ -17,7 +17,7 @@ function fuglLastetFerdig(xml) {
     const tempA = document.createElement("a");
     let navn = innhold.getElementsByTagName("navn")[x].childNodes[0].nodeValue;
     tempA.innerText = navn;
-    tempA.href = "visFugl.html?fugl=" +navn;
+    tempA.href = "visfugl.html?fugl=" +navn;
     oppdaterFarge(tempA, x%2)
     liste.append(tempA);
   }
