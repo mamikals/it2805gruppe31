@@ -146,6 +146,41 @@ padding-right: 3%;
 
 /* css styling for fugleindeks/blibliotek*/
 
+/* CSS-styling for visFugl.html */
+#fugleInfoText {
+  height: 100%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: lightblue, 0.3;
+  flex-flow: row, wrap;
+}
+
+
+
+#fuglTitle {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.birdText {
+position: relative;
+margin-left: 20%;
+margin-right: 20%;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+.birdImg {
+  position: relative;
+  width: 480px;
+  padding-bottom: 50px;
+  margin-left: 20%;
+  margin-right: 20%
+}
+
+#fugleInfoImg {
+  width: 480px;
+}
 
 
 /* css styling for arrangement siden*/
