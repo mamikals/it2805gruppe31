@@ -110,18 +110,16 @@ NAVBAR FOR MOBILMENY???*/
     }
 }
 
-
-
 #bodyOfSite {
+}
 
-  /*SKULLE HELLER LAGD ET ELEMENT INNI BODY OF SITE, UTENFOR BOX :/ */
-  /*PUTINIT HERE*/
-  background-image: url('img/backgroundIndex.jpg');
+/* css styling for index*/
+
+#forBackGround {
   background-repeat: round;
   /*SKJØNNER IKKE HVORFOR, MEN PADDING TO MAKE IT STRECH RIGHT*/
   padding: 1%;
 }
-/* css styling for index*/
 
 #box {
   margin-top: 5%;
