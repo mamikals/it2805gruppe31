@@ -83,7 +83,7 @@ padding-right: 3%;
 }
 
 #mobilknapp{
-  display: none;
+  display: none !important;
   position: fixed;
   top: 0;
   left: 0;
@@ -97,23 +97,13 @@ padding-right: 3%;
     }
 
 
-!  @media screen and (max-width: 600) {
+ @media screen and (max-width: 600) {
     body{
       font-size: 80px;
     }
 
       #mobilknapp {
-          display: block;
-          position: fixed;
-          top: 0;
-          left: 0;
-          background-color: #FFFFFF; /* lyseblå */
-          border: 5px solid #C5CACA;
-          padding: 15px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
+          display: block !important;
         }
 
     #navBar {
