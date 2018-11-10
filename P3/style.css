@@ -196,6 +196,7 @@ padding-right: 3%;
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 20px;
+  display: flow-root;
 }
 
 #div_header{
