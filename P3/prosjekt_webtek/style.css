@@ -159,6 +159,41 @@ padding-right: 3%;
 
 /* css styling for fugleindeks/blibliotek*/
 
+.fugleOversikt_wrap {
+  min-height: inherit;
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background: rgba(192,192,192,0.3) /* Grå bakgrunn med 30% gjennomsiktighet  */
+}
+
+#sookFugl, #fugleListe {
+  width: 35%;
+  min-width: 120px;
+}
+
+
+#fugleListe {
+  border:solid;
+  border-bottom: 0px;
+}
+
+#fugleListe a {
+  padding: 10px;
+  padding-right: 0px;
+  text-align: center;
+  border-bottom: solid;
+  display:block;
+  text-decoration: none;
+}
+
+#fugleListe a:hover {
+  background-color: #10BBA1 !important;
+}
+
 /* CSS-styling for visFugl.html */
 #fugleInfoText {
   height: 100%;
