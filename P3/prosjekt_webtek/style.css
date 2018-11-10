@@ -76,7 +76,20 @@ padding-right: 3%;
 
 
 /* css styling for galleri*/
+.gallery {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
 
+.imgGallery {
+  width: 480px;
+  height: 360px;
+  margin: 20px;
+}
 
 /* css styling for blimedlem*/
 .one {
