@@ -1,5 +1,5 @@
 var fuglXML = new XMLHttpRequest();
-fuglXML.open("GET", "../xml/fugl.xml", true);
+fuglXML.open("GET", "fugl.xml", true);
 fuglXML.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         hentFugl(this);
@@ -24,7 +24,7 @@ function hentFugl(xml) {
     if (navn.toUpperCase() == c.toUpperCase()) {
       document.getElementById('fuglTitle').innerText = xmlDoc.getElementsByTagName("navn")[x].childNodes[0].nodeValue
       /*document.getElementById('fuglInfo').innerText = xmlDoc.getElementsByTagName("navn")[x].childNodes[2].nodeValue*/
-      document.getElementById('fugleInfoImg').src = ("../birdimg/" + xmlDoc.getElementsByTagName("navn")[x].childNodes[0].nodeValue.toLowerCase() + ".jpg")
+      document.getElementById('fugleInfoImg').src = ("birdimg/" + xmlDoc.getElementsByTagName("navn")[x].childNodes[0].nodeValue.toLowerCase() + ".jpg")
     }
   }
 
