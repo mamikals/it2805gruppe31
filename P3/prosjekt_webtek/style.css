@@ -1,6 +1,6 @@
-﻿body {
+body {
   height: 100%;
-  margin: 0px;
+  margin: 0%;
   font-family: Verdana, sans-serif, arial, helvetica;
   font-size: 16px;
 }
@@ -13,11 +13,6 @@
     margin: 0px;
     position: relative;
   }
-
-footer{
-  position:absolute;
-  bottom: 0px;
-}
 
 
 #coverPhoto {
@@ -35,6 +30,7 @@ footer{
 
 #navBar {
   position: sticky;
+  z-index: 1;
   top: 0px;
   padding: 10px;
   margin: 0px;
@@ -76,23 +72,164 @@ padding-right: 3%;
 }
 
 
-
-#bodyOfSite {
-}
 /* css styling for index*/
 
 
 /* css styling for galleri*/
+.gallery {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
 
+.imgGallery {
+  width: 480px;
+  height: 360px;
+  margin: 20px;
+}
 
 /* css styling for blimedlem*/
+.one {
+  background-image: url(img/Medlemskapbakgrunn.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 20px;
+}
+
+#div_header{
+  position: relative;
+  left: 40%;
+  height: 100px;
+  width: 300px;
+  text-align: center;
+}
+
+#div_tekst{
+  position: relative;
+  left: 15%;
+  top: 25%;
+  width: 400px;
+  height: 200px;
+}
+
+#skjema, #div_form_submitted{
+  position: relative;
+  left: 50%;
+  top: 40%;
+  width: 400px;
+  height: 600px;
+}
+
+
+#skjema, #div_tekst {
+  background: rgba(192,192,192,0.3);
+}
+
+#top {
+  text-align: center;
+}
+
+#male, #female {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 15px;
+}
+
+.inputfield, #submit {
+  margin-bottom: 35px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#submit {
+  font-size: 20px;
+}
+
 
 
 /* css styling for fugleindeks/blibliotek*/
 
+.fugleOversikt_wrap {
+  min-height: inherit;
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background: rgba(192,192,192,0.3) /* Grå bakgrunn med 30% gjennomsiktighet  */
+}
 
-/* css styling for fugleinfo */
-#
+#sookFugl, #fugleListe {
+  width: 35%;
+  min-width: 120px;
+}
+
+
+#fugleListe {
+  border:solid;
+  border-bottom: 0px;
+}
+
+#fugleListe a {
+  padding: 10px;
+  padding-right: 0px;
+  text-align: center;
+  border-bottom: solid;
+  display:block;
+  text-decoration: none;
+}
+
+#fugleListe a:hover {
+  background-color: #10BBA1 !important;
+}
+
+/* CSS-styling for visFugl.html */
+#fugleInfoText {
+  height: 100%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: lightblue, 0.3;
+  flex-flow: row, wrap;
+}
+
+
+
+#fuglTitle {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.birdText {
+position: relative;
+margin-left: 20%;
+margin-right: 20%;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+.birdImg {
+  position: relative;
+  width: 480px;
+  padding-bottom: 50px;
+  margin-left: 20%;
+  margin-right: 20%
+}
+
+#fugleInfoImg {
+  width: 480px;
+}
+
 
 /* css styling for arrangement siden*/
 .arrangementer_wrap {
