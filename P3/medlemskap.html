@@ -10,20 +10,31 @@
 
 </head>
 <body>
+  <button id= "mobilknapp" onclick="dropdown()">
+    <img src="img/navicon.png" alt="Ting" width="15%" style="float:right;">
+  </button>
+  <div id="mobBar" style="display:none;">
+    <ul>
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="arrangementoversikt.html">Arrangementer</a></li>
+      <li><a href="galleri.html">Galleri</a></li>
+      <li><a href="fugleoversikt.html">Fugleoversikt</a></li>
+      <li><a href="medlemskap.html">Bli medlem</a></li>
+    </ul>
+  </div>
   <div class="slideshow">
     <img id="coverPhoto" src= "img/coverphoto_4.jpg" alt= "Bilde av fugler" > <!-- blidet som vises hvis scriptet som skal spille av forskjellige bilder ikke loader -->
       <div id="logo"> <!-- logo som skal ligge over slideshowet/cover bildet-->
         <img src="img/logo.png" alt="Norske fugletittere" />
       </div>
   </div>
-  <button class= "mobilknapp" onclick="dropdown()">Meny</button>
-  <div class="navBar" id = "navBar" >
+  <div id="navBar" >
     <ul>
-      <li ><a href="index.html">Hjem</a></li>
-      <li ><a href="arrangementoversikt.html">Arrangementer</a></li>
-      <li ><a href="galleri.html">Galleri</a></li>
-      <li ><a href="fugleoversikt.html">Fugleoversikt</a></li>
-      <li ><a  href="medlemskap.html">Bli medlem</a></li>
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="arrangementoversikt.html">Arrangementer</a></li>
+      <li><a href="galleri.html">Galleri</a></li>
+      <li><a href="fugleoversikt.html">Fugleoversikt</a></li>
+      <li><a  href="medlemskap.html">Bli medlem</a></li>
     </ul>
   </div>
     <div id="bodyOfSite" > <!-- sett inn din valgte bakgrunn! -->
@@ -97,6 +108,7 @@
             </footer>
         <script src="medlemsscript.js"></script>
         <script src="dropdown.js"></script>
+        <script type="text/javascript" src="jsSlideShow.js"></script>
         <!-- legg til alle relevante javascript her. -->
     </body>
 </html>
