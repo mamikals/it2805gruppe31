@@ -7,44 +7,53 @@
     <link rel="shortcut icon" href="img/favicon.png">
     <title></title>
   </head>
-  <body>  <body>
-      <div class="slideshow">
-        <img id="coverPhoto" src= "img/coverphoto_4.jpg" alt= "Bilde av fugler" > <!-- blidet som vises hvis scriptet som skal spille av forskjellige bilder ikke loader -->
-          <div id="logo"> <!-- logo som skal ligge over slideshowet/cover bildet-->
-            <img src="img/logo.png" alt="Norske fugletittere" />
-          </div>
+  <body>
+    <button id= "mobilknapp" onclick="dropdown()">
+      <img src="img/navicon.png" alt="Ting" width="15%" style="float:right;">
+    </button>
+    <div id="mobBar" style="display:none;">
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="arrangementoversikt.html">Arrangementer</a></li>
+        <li><a href="galleri.html">Galleri</a></li>
+        <li><a href="fugleoversikt.html">Fugleoversikt</a></li>
+        <li><a href="medlemskap.html">Bli medlem</a></li>
+      </ul>
+    </div>
+    <div class="slideshow">
+      <img id="coverPhoto" src= "img/coverphoto_4.jpg" alt= "Bilde av fugler" > <!-- blidet som vises hvis scriptet som skal spille av forskjellige bilder ikke loader -->
+      <div id="logo"> <!-- logo som skal ligge over slideshowet/cover bildet-->
+        <img src="img/logo.png" alt="Norske fugletittere" />
       </div>
-      <button class= "mobilknapp" onclick="dropdown()">Meny</button>
-      <div class="navBar" id = "navBar" >
-        <ul>
-          <li ><a href="index.html">Hjem</a></li>
-          <li ><a href="arrangementoversikt.html">Arrangementer</a></li>
-          <li ><a href="galleri.html">Galleri</a></li>
-          <li ><a href="fugleoversikt.html">Fugleoversikt</a></li>
-          <li ><a  href="medlemskap.html">Bli medlem</a></li>
-        </ul>
-      </div>
-      <div id="bodyOfSite" style="background-image:url(img/bakgrunn_fugl.jpg)" > <!-- sett inn din valgte bakgrunn! -->
+    </div>
+    <div id="navBar" >
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="arrangementoversikt.html">Arrangementer</a></li>
+        <li><a href="galleri.html">Galleri</a></li>
+        <li><a href="fugleoversikt.html">Fugleoversikt</a></li>
+        <li><a href="medlemskap.html">Bli medlem</a></li>
+      </ul>
+    </div>
+    <div id="bodyOfSite" style="background-image:url(img/bakgrunn_fugl.jpg)" > <!-- sett inn din valgte bakgrunn! -->
 
-        <!-- Her skal du plassere din kode for den bestemte siden. legg koden i en div som du bruker som wrap -->
+      <!-- Her skal du plassere din kode for den bestemte siden. legg koden i en div som du bruker som wrap -->
 
-        <div id="fugleInfoText">
-          <h2 id="fuglTitle"></h2>
-          <p id="fuglInfo"></p>
-          <img id="fugleInfoImg" src="" alt="">
+      <div id="fugleInfoText">
+        <h2 id="fuglTitle"></h2>
+        <p id="fuglInfo"></p>
+        <img id="fugleInfoImg" src="" alt="">
         </div>
-
-      </div>
-      <footer>
-        <a href="mailto:fugletittere@fugletitting.no">fugletittere@fugletitting.no</a>
-        <p>Fugletitterveien 2, 7044 Trondheim Norge</p>
-        <a href="https://www.facebook.com/fugletitterne" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/fugletittere" target="_blank">Instagram</a>
-            </footer>
-
-      <!-- legg til alle relevante javascript her. -->
-      <script type="text/javascript" src="fugleinfo.js"></script>
-      <script type="text/javascript" src="dropdown.js"></script>
-      <script type="text/javascript" src="jsForside.js"></script>
+    </div>
+    <footer>
+      <a href="mailto:fugletittere@fugletitting.no">fugletittere@fugletitting.no</a>
+      <p>Fugletitterveien 2, 7044 Trondheim Norge</p>
+      <a href="https://www.facebook.com/fugletitterne" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/fugletittere" target="_blank">Instagram</a>
+    </footer>
+    <!-- legg til alle relevante javascript her. -->
+    <script type="text/javascript" src="fugleinfo.js"></script>
+    <script type="text/javascript" src="dropdown.js"></script>
+    <script type="text/javascript" src="jsForside.js"></script>
   </body>
 </html>
