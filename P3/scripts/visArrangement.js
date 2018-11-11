@@ -4,7 +4,7 @@ xhttp.onreadystatechange = function() {
         linktilarrangement(this);
     }
 };
-xhttp.open("GET", "../arrangement.xml", true);
+xhttp.open("GET", "arrangement.xml", true);
 xhttp.send();
 
 function linktilarrangement(xml) {
