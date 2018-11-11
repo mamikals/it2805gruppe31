@@ -75,20 +75,6 @@ body {
   background-color: #ACA9A8;
 }
 
-<<<<<<< HEAD
-.mobilknapp {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #FFFFFF;
-  border: 5px solid #C5CACA;
-  padding: 15px 15px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-}
-=======
 #navBar > * {
 padding-left: 3%;
 padding-right: 3%;
@@ -102,62 +88,8 @@ padding-right: 3%;
   display: none !important;
 }
 
-@media only screen and (max-width: 480px) {
-  body{
-    width: 100%;
-  }
-  #mobilknapp {
-    position: sticky;
-    width: 100%;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-    display: block !important;
-  }
-  #navBar {
-    display: none;
-  }
-  #mobBar ul {
-    padding: 0;
-    text-align: right;
 
-  }
-  #mobBar {
-    position: fixed;
-    display: none;
-    bottom: : 0;
-    left: 0;
-    display: none;
-    z-index: 1;
-    top: 0px;
-    padding-top: 50px;
-    margin: 0px;
-    width: 100%;
-    background-color: rgba(255,255,255,0.9);
-    text-align: left;
-  }
-  #mobBar ul li {
-    list-style-type: none;
-    margin: 0;
-    padding-top: 15px;
-    display: block;
-    line-height: 1.5;
-  }
-  #mobBar ul li a{
-    padding-right: 10px;
-  }
-  h1 {
-    font-size: 1em;
-  }
-  .fugleOversikt_wrap h1{
-    font-size: 100%;
-  }
-}
 
->>>>>>> f206cf103f01f55366576f8011b4768501dabe19
 /* css styling for index*/
 
 #forBackGround {
@@ -387,40 +319,60 @@ footer > * {
   padding-right: 1.5%;
 }
 
-@media screen and (max-width: 600px) {
-  .navBar {
-        position: fixed;
-        display: none;
-        top:  0;
-        left: 0;
-        display: none;
-        z-index: 1;
-        top: 0px;
-        margin: 0px;
-        border: 5px solid #C5CACA;
-        background-color: #FFFFFF;
-        text-align: left;
+@media only screen and (max-width: 480px) {
+  body{
+    width: 100%;
   }
-  .navBar ul {
+  #mobilknapp {
+    position: sticky;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    display: block !important;
+  }
+  #navBar {
+    display: none;
+  }
+  #mobBar ul {
     padding: 0;
-    padding-top: 30px;
-  }
-  .navBar ul li {
-      list-style-type: none;
-      margin: 0;
-      padding-top: 15px;
-      display: block;
-      line-height: 1.5;
-  }
-    .mobilknapp {
-        display: block;
-        z-index: 2;
-      }
+    text-align: right;
 
-      h1 {
-        font-size: 1em;
-      }
-    .one {
-      font-size: 14px;
-    }
+  }
+  #mobBar {
+    position: fixed;
+    display: none;
+    bottom: : 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+    top: 0px;
+    padding-top: 50px;
+    margin: 0px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.9);
+    text-align: left;
+  }
+  #mobBar ul li {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 15px;
+    display: block;
+    line-height: 1.5;
+  }
+  #mobBar ul li a{
+    padding-right: 10px;
+  }
+  h1 {
+    font-size: 1em;
+  }
+  .fugleOversikt_wrap h1{
+    font-size: 100%;
+  }
+  .one {
+    font-size: 14px;
+  }
 }
