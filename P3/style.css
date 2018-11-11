@@ -143,6 +143,14 @@ padding-right: 3%;
   margin-left: 15%;
 }
 
+#bodyOfGallery {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .imgGallery {
   width: 70%;
   margin: 15%;
