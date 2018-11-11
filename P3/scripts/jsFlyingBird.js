@@ -8,7 +8,7 @@ var moveY = 0;
 bird.addEventListener('mouseover', moveBird);
 
 function moveBird() {
-  count2 += 1
+  count2 += 1;
 
   if (count2 % 2 != 0) {
     bird.src = 'img/birdDown.jpg';
