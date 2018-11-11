@@ -186,7 +186,7 @@ padding-right: 3%;
 #birdFlyAway {
   width: 15%;
   height: 10%;
-
+  z-index: 100;
   position: relative;
   left: 84%;
   bottom: 0%;
