@@ -1,0 +1,206 @@
+/*INNRYKK RETTET OVERALT*/
+/*BEGYNTE Å SKRIVE PÅ ENGLSK, SÅ BARE FORTSATTE  :) BLÆ HAHA*/
+
+﻿body {
+  height: 100%;
+  margin: 0px;
+  font-family: Verdana, sans-serif, arial, helvetica;
+  font-size: 16px;
+}
+
+a {
+  color: #000000;
+}
+
+.slideshow {
+  position: relative;
+}
+
+#coverPhoto {
+	width: 100%;
+	height: auto;
+  margin: 0px;
+  display: block;
+
+  /*ADDED FOR SLIDESHOW*/
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+
+  animation-name: fade;
+  animation-timing-function: linear;
+}
+
+@keyframes fade {
+  0% {opacity: 0; transform: translate(-95%);}
+  8% {opacity: 1;}
+  10% {transform: translate(0%);}
+  90% {transform: translate(0%);}
+  92% {opacity: 1;}
+  100% {opacity: 0; transform: translate(-95%);}
+}
+/*END OF: ADDED FOR SLIDESHOW*/
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#navBar {
+  position: sticky;
+  top: 0px;
+}
+/*!!!!!!!!!!!*/
+/*UL OG LI SOM MÅ STYLES*/
+/*!!!!!!!!!!*/
+#navBar ul {
+  /*CHANGE TO % FOR INTERACTIV DESIGNE*/
+  padding: 2%;
+  margin: 0%;
+
+  /*ADDED*/
+  list-style-type: none;
+  /*ADDED*/
+
+  border: 5px solid #C5CACA;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+#navBar li {
+  display: inline;
+
+  text-align: center;
+
+  padding: 0.5%;
+  margin-left: 3%;
+}
+
+/*UTEN > DELEN*/
+#navBar a:hover {
+  background-color: #ACA9A8;
+  color: #FFFFFF;
+}
+
+/*MAYBE COPY PASTE FROM
+NAVBAR FOR MOBILMENY???*/
+
+#mobilmeny {
+  display: none;
+}
+
+#mobilknapp {
+  display: none;
+}
+
+/* css for mobiler og enheter med mindre skjermer*/
+@media only screen and (max-width: 1600px) {
+  font-size: 80px;
+  #navBar {
+    display: none;
+  }
+
+  #mobilknapp {
+    display: block;
+  }
+
+  #mobilmeny {
+      display: none;
+    }
+}
+
+#bodyOfSite {
+}
+
+/* css styling for index*/
+
+#forBackGround {
+  background-repeat: round;
+  /*SKJØNNER IKKE HVORFOR, MEN PADDING TO MAKE IT STRECH RIGHT*/
+  padding: 1%;
+}
+
+#box {
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+
+  border: solid;
+  border-width: medium;
+  border-color: black;
+
+  background: rgba(192,192,192,0.9) /* Grå bakgrunn med 10% gjennomsiktighet  */
+}
+
+#box h2 {
+  text-align: center;
+}
+
+#box p {
+  text-align: left;
+  margin-left: 2%;
+}
+
+#listIndex {
+  list-style-type: square;
+  margin: 5%;
+}
+
+#månedensBilde {
+  height: auto;
+  width: 100%;
+}
+
+#birdFlyAway {
+  width: 15%;
+  height: 10%;
+
+  position: relative;
+  left: 84%;
+  bottom: 0%;
+}
+
+/* css styling for galleri*/
+
+
+/* css styling for blimedlem*/
+
+
+/* css styling for fugleindeks/blibliotek*/
+
+
+/* css styling for fugleinfo */
+
+/* css styling for arrangement siden*/
+.arrangementer_wrap {
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background: rgba(192,192,192,0.3) /* Grå bakgrunn med 30% gjennomsiktighet  */
+}
+/* css styling for footer elementet */
+
+/*DET ER IKKE NOE STYLEING FOR * ELEMENT, SÅ FJERNER DETTE*/
+/*POSISJONEN SKAL IKKE SETTES UTIFRA SLIDESHOWETS POSISJON, FJERNET DETTE*/
+/*TRENGER BARE PADDING 1 GANG*/
+footer {
+  margin-bottom: -20px;
+  border: 5px solid #C5CACA;
+  text-align: center;
+  background-color: #FFFFFF;
+  /*KANNINKKE HA DEN SÅNN DAA DET INTE FILLER*/
+  /*display: inline-block;*/
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+
+/*EVT. GJØR NOE ALLA DETTE? MÅ ENDRES LITT DA :)
+footer p {
+  display: inline;
+}
+*/
