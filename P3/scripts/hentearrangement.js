@@ -4,7 +4,7 @@ xhttp.onreadystatechange = function() {
         henteinfo(this);
     }
 };
-xhttp.open("GET", "arrangement.xml", true);
+xhttp.open("GET", "../arrangement.xml", true);
 xhttp.send();
 
 
