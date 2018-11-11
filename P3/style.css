@@ -88,44 +88,7 @@ body {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-    }
-
-
- @media screen and (max-width: 600px) {
-    .navBar {
-          position: fixed;
-          display: none;
-          top:  0;
-          left: 0;
-          display: none;
-          z-index: 1;
-          top: 0px;
-          margin: 0px;
-          border: 5px solid #C5CACA;
-          background-color: #FFFFFF;
-          text-align: left;
-    }
-    .navBar ul {
-      padding: 0;
-      padding-top: 30px;
-    }
-    .navBar ul li {
-        list-style-type: none;
-        margin: 0;
-        padding-top: 15px;
-        display: block;
-        line-height: 1.5;
-    }
-      .mobilknapp {
-          display: block;
-          z-index: 2;
-        }
-
-        h1 {
-          font-size: 1em;
-        }
-  }
-
+}
 /* css styling for index*/
 
 #forBackGround {
@@ -200,30 +163,13 @@ body {
   background-size: cover;
   font-size: 20px;
   display: flow-root;
+  width: fit-content;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
-#div_header{
-  position: relative;
-  left: 40%;
-  height: 100px;
-  width: 300px;
+#div_header, #div_tekst, #skjema, #div_form_submitted{
   text-align: center;
-}
-
-#div_tekst{
-  position: relative;
-  left: 15%;
-  top: 25%;
-  width: 400px;
-  height: 200px;
-}
-
-#skjema, #div_form_submitted{
-  position: relative;
-  left: 50%;
-  top: 40%;
-  width: 400px;
-  height: 600px;
 }
 
 
@@ -255,8 +201,6 @@ body {
 #submit {
   font-size: 20px;
 }
-
-
 
 /* css styling for fugleindeks/blibliotek*/
 
@@ -369,4 +313,42 @@ footer > * {
   display: inline-block;
   padding-left: 1.5%;
   padding-right: 1.5%;
+}
+
+@media screen and (max-width: 600px) {
+  .navBar {
+        position: fixed;
+        display: none;
+        top:  0;
+        left: 0;
+        display: none;
+        z-index: 1;
+        top: 0px;
+        margin: 0px;
+        border: 5px solid #C5CACA;
+        background-color: #FFFFFF;
+        text-align: left;
+  }
+  .navBar ul {
+    padding: 0;
+    padding-top: 30px;
+  }
+  .navBar ul li {
+      list-style-type: none;
+      margin: 0;
+      padding-top: 15px;
+      display: block;
+      line-height: 1.5;
+  }
+    .mobilknapp {
+        display: block;
+        z-index: 2;
+      }
+
+      h1 {
+        font-size: 1em;
+      }
+    .one {
+      font-size: 14px;
+    }
 }
