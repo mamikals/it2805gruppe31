@@ -9,7 +9,7 @@
 <body>
   <div class="inner">
     <h1>Norske Fugletittere</h1>
-    <h4>Mikal Norvoll, Aksel Saugestad, Morten Mikalsen, Fredrik P. Moren, Liv-Radi Lersveen</h4>
+    <h4>Mikal Norvoll, Aksel Saugestad, Morten Mikalsen, Fredrik P. Moren, Liv-Randi Lersveen</h4>
     <h6>11.11.2018</h6>
 
     <h4>Administrative detaljer</h4>
@@ -19,13 +19,15 @@
     <h2>Endringene vi har gjort</h2>
 
     <h3>Endringer på index.html</h3>
-    <p>Bla bla bla</p>
+    <p>Implementering for endring av skjermstørrelse, bla. logoplasseringe. Noen trodde det skulle være flere billedkategorier, som f.eks. populære fugler, og så for seg disse som mer interaktive. Nedre del av teksten var veldig lite utfyllende.</p>
 
     <h3>Endringer på arrangementoversikt.html</h3>
-    <p>Bla bla bla</p>
+    <p>Arrangement siden har en synlig endring. Isteden for å dele arrangementene opp i "kommende arrangementer" og "tidligere arrangementer",
+    så er det et element som inneholder de arrangementene som ligger i den tilhørende xml-fila.
+    Dette forenklet javascriptet noe og gjorde at utseendet ble mer likt for ulike platformer</p>
 
     <h3>Endringer på arrangement.html</h3>
-    <p>Bla bla bla</p>
+    <p>Størrelsesforholdet mellom de ulike typene informasjon er noe endret, ellers så inneholder siden ingen store synlige endringer. Disse endringene ble gjort med tanke på å forbedre leseropplevelsen.</p>
 
     <h3>Endringer på galleri.html</h3>
     <p>I galleriet måtte vi droppe ideen med at antall columns avhenger av vinduets oppløsning, da vi ikke har tilgang til flexboxer.</p>
@@ -40,37 +42,35 @@
     <p>Gjør stort sett det samme som den skulle gjøre, men viser ikke fuglens habitat da alle er vanlige fugler i Norge.</p>
 
     <h3>Endringer på medlemskap.html</h3>
-    <p>Bla bla bla</p>
+    <p>Siden inneholder de samme elementene, men oppsettet til siden er endret slik at alt er midtstilt på siden. Dette
+    er fordi det var mer praktisk og virket ikke negativt på utseendet.
+    </p>
 
     <h3>Endringer på style.css</h3>
-    <p>Bla bla bla</p>
-
-    <h3>Endringer på arrangement.xml</h3>
-    <p>Bla bla bla</p>
+    <p>Siden har en større skrifttype enn det som ble foreslått i P2. </p>
 
     <h3>Endringer på dropdown.js</h3>
-    <p>Bla bla bla</p>
+    <p>Det ble lagt til kode fra nettet
+    (<a href="https://www.blustemy.io/detecting-a-click-outside-an-element-in-javascript/">https://www.blustemy.io/detecting-a-click-outside-an-element-in-javascript/</a>)
+    for å lukke dropdown-menyen når en person scroller eller trykker utenfor menyen.</p>
 
     <h3>Endringer på fugleinfo.js</h3>
     <p>Bla bla bla</p>
 
     <h3>Endringer på hentearrangement.js</h3>
-    <p>Bla bla bla</p>
+    <p>Det er ingen endringer i fila hentarangement.js fra det som ble nevnt i P2.</p>
 
     <h3>Endringer på jsSlideShow.js</h3>
-    <p>Bla bla bla</p>
+    <p>Endringer på varighet eller hastighet, rolige overganger passer kanskje bedre til en fugleside. Legge til flere bilder. Muligheten til å bla mellom bilder.</p>
+
+    <h3>Ny javascript-fil jsFlyingBird.js</h3>
+    <p>Kunne hatt en annen kurve. Evt. at den beveger seg når man er i nærheten kontra når man aktiverer function moveBird() med mouseover.</p>
 
     <h3>Endringer på listFugler.js</h3>
     <p>I denne filen ble det lagt til en ny funksjon oppdaterFarge(). Vi så at det ble vanskelig
     å skille mellom fuglene. Denne funksjonen sørger for at hvert element får annenhver farge.
     Vi var nødt til å lage en funksjon istedet for å bruke nth-child(even) og nth-child(odd),
     fordi css ikke ville oppdatere seg hvis man brukte søk-baren.</p>
-
-    <h3>Endringer på medlemsscript.js</h3>
-    <p>Bla bla bla</p>
-
-    <h3>Endringer på visArrangement.js</h3>
-    <p>Bla bla bla</p>
 
     <h3>Ny javascript-fil jsFlyingBird.js</h3>
     <p>Bla bla bla</p>
@@ -79,6 +79,11 @@
     <p>Fordi det var et lite antall arrangementer, kunne det hende at høyden til arrangementoversikt.html
     ble mindre enn enheten på mobilversjonen. For å forhindre dette sørger denne javascript-filen for
     at siden aldri er mindre enn enheten.</p>
+
+    <h3>Modularitetskrav</h3>
+    <p>For å oppfylle kravet om modularitet lagde vi mesteparten av siden med prosent som bredde eller høyde
+    eller brukte min-height og min-width. Vi lagde også en mobilversjon av CSS-en, med media query for
+    skjermer mindre enn 480px. Vi lagde også en egen dropdown navbar for mobil-siden.</p>
 
     <h2>Oppdatert full fil struktur</h2>
     <ul>
@@ -113,32 +118,49 @@
         <li>svartmeis.jpg</li>
         <li>svarttrost.jpg</li>
       </ul>
+      <li>galleribilder/</li>
       <ul>
-        <li>fav.png</li>
+        <li>bird1.jpg</li>
+        <li>bird2.jpg</li>
+        <li>bird3.jpg</li>
+        <li>bird4.jpg</li>
+        <li>bird5.jpg</li>
+      </ul>
+      <li>img/</li>
+      <ul>
+        <li>backgroundIndex.jpg</li>
+        <li>background_arrangement.jpg</li>
+        <li>bakgrunn_fugl.jpg</li>
+        <li>bakgrunn_galleri.jpg</li>
+        <li>birdDown.jpg</li>
+        <li>birdUp.jpg</li>
+        <li>coverphoto_1.jpg</li>
+        <li>coverphoto_2.jpg</li>
+        <li>coverphoto_3.jpg</li>
+        <li>coverphoto_4.jpg</li>
+        <li>favicon.png</li>
+        <li>filename.txt</li>
+        <li>flowchart.PNG</li>
+        <li>kråke.jpg</li>
         <li>logo.png</li>
-        <li>...</li>
-        <li>galleri</li>
-          <ul>
-            <li>fugl1.jpg</li>
-            <li>fugl2.jpg</li>
-            <li>...</li>
-          </ul>
-        <li>fugler</li>
-        <li>slideshow</li>
-        <ul>
-          <li>bilde1.jpg</li>
-          <li>bilde2.jpg</li>
-          <li>...</li>
-        </ul>
+        <li>Medlemskapbakgrunn.jpg</li>
+        <li>Månedens bilde.jpg</li>
+        <li>Thumbs.db</li>
+        <li>navicon.png</li>
       </ul>
-      <li>scripts</li>
+      <li>scripts/</li>
       <ul>
-        <li>visFugl.js</li>
+        <li>dropdown.js</li>
+        <li>fugleinfo.js</li>
+        <li>hentearrangement.js</li>
+        <li>hoyde.js</li>
+        <li>jsFlyingBird.js</li>
+        <li>jsSlideShow.js</li>
+        <li>listFugler.js</li>
+        <li>medlemsscript.js</li>
         <li>visArrangement.js</li>
-        <li>sendMedlemskap.js</li>
-        <li>filter.js</li>
       </ul>
-      </ul>
+    </ul>
 
     <h3>Endelig arbeidsfordeling</h3>
     <div class="table">
