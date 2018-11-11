@@ -14,13 +14,12 @@ body {
     position: relative;
   }
 
-
 #coverPhoto {
 	  width: 100%;
 	  height: auto;
     margin: 0px;
     display: block;
-  }
+}
 
   /*SLIDESHOW*/
   animation-duration: 8s;
@@ -87,8 +86,6 @@ padding-right: 3%;
 #mobilknapp{
   display: none !important;
 }
-
-
 
 /* css styling for index*/
 
@@ -296,14 +293,7 @@ margin-bottom: 30px;
 }
 
 .arrangement_wrap {
-  text-align: left;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  padding-left: 10%;
   padding-right: 5%;
-  margin-left: 20%;
-  margin-right: 20%;
-  background: rgba(192,192,192,0.7) /* Grå bakgrunn med 30% gjennomsiktighet  */
 }
 /* css styling for footer elementet */
 footer {
@@ -371,6 +361,9 @@ footer > * {
   }
   .fugleOversikt_wrap h1{
     font-size: 100%;
+  }
+  .fugleOversikt_wrap{
+    min-height: 600px;
   }
   .one {
     font-size: 14px;
