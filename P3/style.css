@@ -140,7 +140,15 @@ padding-right: 3%;
 .gallery {
   width: 70%;
   margin-right: 15%;
-  margin-left: 15%
+  margin-left: 15%;
+}
+
+#bodyOfGallery {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .imgGallery {
