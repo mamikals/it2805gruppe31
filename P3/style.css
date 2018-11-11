@@ -154,9 +154,9 @@ padding-right: 3%;
 .imgGallery {
   width: 70%;
   margin: 15%;
-  margin-top: 0;
+  margin-top: 20px;
   margin-bottom: 0;
-  padding: 20px;
+  border: 1px solid;
 }
 
 /* css styling for blimedlem*/
