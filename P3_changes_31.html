@@ -12,7 +12,7 @@
     <h4>Mikal Norvoll, Aksel Saugestad, Morten Mikalsen, Fredrik P. Moren, Liv-Randi Lersveen</h4>
     <h6>11.11.2018</h6>
 
-    <h4>Administrative detaljer</h4>
+    <h2>Administrative detaljer</h2>
     <p> Vi har en falsk klient "Norske Fugletittere". Dette er en oppdiktet organisasjon med tilholdssted
       i Trondheim. </p>
 
@@ -49,9 +49,6 @@
     <h3>Endringer på style.css</h3>
     <p>Siden har en større skrifttype enn det som ble foreslått i P2. </p>
 
-    <h3>Endringer på fugl.xml</h3>
-    <p>Inneholder fugler med navn og beskrivelse av fuglens utsenede.</p>
-
     <h3>Endringer på dropdown.js</h3>
     <p>Det ble lagt til kode fra nettet
     (<a href="https://www.blustemy.io/detecting-a-click-outside-an-element-in-javascript/">https://www.blustemy.io/detecting-a-click-outside-an-element-in-javascript/</a>)
@@ -82,6 +79,10 @@
     <p>Fordi det var et lite antall arrangementer, kunne det hende at høyden til arrangementoversikt.html
     ble mindre enn enheten på mobilversjonen. For å forhindre dette sørger denne javascript-filen for
     at siden aldri er mindre enn enheten.</p>
+    <h3>Fjernet bildeForvisning.js</h3>
+    <p>Orginalt skulle det være mulig å se en forhåndsvisning av fuglen når man holdt over linken.
+    Men det ble forstyrende for brukeren, siden det er det eneste innholdet i fugleoversikt,
+    og fordi det ikke passet inn i mobilversjonen. Derfor bestemte vi oss for å bli kvitt ideen.</p>
 
     <h3>Modularitetskrav</h3>
     <p>For å oppfylle kravet om modularitet lagde vi mesteparten av siden med prosent som bredde eller høyde
@@ -191,7 +192,7 @@
         <tr>
           <td>arrangementoversikt.html</td>
           <td>siden som inneholder info om kommende og tidligere arrangementer</td>
-          <td>Liv-Randi</td>
+          <td>Liv-Randi/Morten</td>
         </tr>
         <tr>
           <td>fugleoversikt.html</td>
@@ -204,7 +205,7 @@
           <td>Liv-Randi</td>
         </tr>
         <tr>
-          <td>fugl.html</td>
+          <td>visfugl.html</td>
           <td>Side som inneholder spesifikk informasjon om en fugl</td>
           <td>Mikal</td>
         </tr>
@@ -216,7 +217,7 @@
         <tr>
           <td>fugl.xml</td>
           <td>XML-fil for å lagre informasjonen om fuglene</td>
-          <td>Mikal</td>
+          <td>Mikal/Morten</td>
         </tr>
         <tr>
           <td>style.css</td>
@@ -224,64 +225,49 @@
           <td>Alle</td>
         </tr>
         <tr>
-          <td>fav.png</td>
+          <td>favicon.png</td>
           <td>Et favicon til websiden</td>
-          <td>Alle</td>
+          <td>Morten</td>
         </tr>
         <tr>
           <td>logo.png</td>
           <td>Logoen vil vises over toppbildet på alle sidene</td>
-          <td>Alle</td>
+          <td>Morten</td>
         </tr>
         <tr>
-          <td>visFugl.js</td>
+          <td>fugleinfo.js</td>
           <td>Skal hente informasjon fra en .xml-fil og finne rett bilde for fugle</td>
-          <td>Mikal</td>
+          <td>Mikal/Morten</td>
         </tr>
         <tr>
-          <td>visArrangement.js</td>
+          <td>hentearrangement.js</td>
           <td>Skal hente informasjon fra en .xml-fil og finne rett bilde for arrangementet</td>
-          <td>Mikal</td>
+          <td>Liv-Randi</td>
         </tr>
         <tr>
-          <td>sendMedlemskap.js</td>
+          <td>medlemskapscript.js</td>
           <td>Sender "sende inn" medlemskapsdata og gi brukeren bekreftelse på innsending</td>
           <td>Aksel</td>
         </tr>
         <tr>
-          <td>filter.js</td>
+          <td>listfugler.js</td>
           <td>Et søkefelt hvor besøkende kan søke etter fugler i fugleoversikten</td>
           <td>Morten</td>
         </tr>
         <tr>
-          <td>slideshow.js</td>
+          <td>jsSlideShow.js</td>
           <td>Skifter bilder i toppdelen av nettsidene.</td>
+          <td>Fredrik</td>
+        </tr>
+        <tr>
+          <td>jsFlyingBird.js</td>
+          <td></td>
           <td>Fredrik</td>
         </tr>
         <tr>
           <td>dropdown.js</td>
           <td>En dropdown meny for mobilbrukere å komme seg mellom sidene.</td>
-          <td>Liv-Randi</td>
-        </tr>
-        <tr>
-          <td>bildeForvisning.js</td>
-          <td>Viser en forhåndsvisning av fugelen når du holder over hyperlinken til den.</td>
-          <td>Morten</td>
-        </tr>
-        <tr>
-          <td>Endelig sjekk</td>
-          <td>Dobbelsjekke hver fil for feil, sjekke javascript-en og css-en</td>
-          <td>Alle</td>
-        </tr>
-        <tr>
-          <td>Brukertest</td>
-          <td>Gir ut nettsiden til testbrukere</td>
-          <td>Alle</td>
-        </tr>
-        <tr>
-          <td>Rettelse</td>
-          <td>Retter på nettsiden basert på testbrukernes tilbakemelding</td>
-          <td>Alle</td>
+          <td>Liv-Randi/Morten</td>
         </tr>
       </table>
     </div>
