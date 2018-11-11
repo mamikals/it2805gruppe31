@@ -323,6 +323,9 @@ footer > * {
     border: 0px;
     display: block !important;
   }
+  #mobilknapp img{
+    width: 15%;
+  }
   #navBar {
     display: none;
   }
