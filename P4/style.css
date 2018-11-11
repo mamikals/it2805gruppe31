@@ -1,0 +1,378 @@
+body {
+  height: 100%;
+  margin: 0%;
+  font-family: Verdana, sans-serif, arial, helvetica;
+  font-size: 16px;
+}
+
+ a {
+  color: #000000;
+}
+
+.slideshow {
+    margin: 0px;
+    position: relative;
+  }
+
+
+#coverPhoto {
+	  width: 100%;
+	  height: auto;
+    margin: 0px;
+    display: block;
+  }
+
+  /*SLIDESHOW*/
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+
+  animation-name: fade;
+  animation-timing-function: linear;
+}
+
+@keyframes fade {
+  0% {opacity: 0; transform: translate(-95%);}
+  8% {opacity: 1;}
+  10% {transform: translate(0%);}
+  90% {transform: translate(0%);}
+  92% {opacity: 1;}
+  100% {opacity: 0; transform: translate(-95%);}
+}
+/*END OF: SLIDESHOW*/
+#logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+#navBar {
+  position: sticky;
+  z-index: 1;
+  top: 0px;
+  padding: 0px;
+  margin: 0px;
+  border: 5px solid #C5CACA;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+#navBar ul li  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    line-height: 1.5;
+}
+
+#navBar ul li a {
+  padding: 18px;
+}
+
+
+#navBar ul li a:hover {
+  color: #FFFFFF;
+  background-color: #ACA9A8;
+}
+
+#navBar > * {
+padding-left: 3%;
+padding-right: 3%;
+}
+
+#logo img{
+  width:100%;
+}
+
+#mobilknapp{
+  display: none !important;
+}
+
+
+
+/* css styling for index*/
+
+#forBackGround {
+  background-repeat: round;
+  /*SKJØNNER IKKE HVORFOR, MEN PADDING TO MAKE IT STRECH RIGHT*/
+  padding: 1%;
+}
+
+#box {
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+
+  border: solid;
+  border-width: medium;
+  border-color: black;
+
+  background: rgba(192,192,192,0.8) /* Grå bakgrunn med 20% gjennomsiktighet  */
+}
+
+#box h2 {
+  text-align: center;
+}
+
+#box p {
+  text-align: left;
+  margin-left: 2%;
+}
+
+#listIndex {
+  list-style-type: square;
+  margin: 5%;
+}
+
+#månedensBilde {
+  height: auto;
+  width: 100%;
+}
+
+#birdFlyAway {
+  width: 15%;
+  height: 10%;
+  z-index: 100;
+  position: relative;
+  left: 84%;
+  bottom: 0%;
+}
+
+/* css styling for galleri*/
+.gallery {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgGallery {
+  width: 480px;
+  height: 360px;
+  margin: 20px;
+  max-width: 100%;
+}
+
+/* css styling for blimedlem*/
+.one {
+  background-image: url(img/Medlemskapbakgrunn.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 20px;
+  display: flow-root;
+  width: fit-content;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#div_header, #div_tekst, #skjema, #div_form_submitted{
+  text-align: center;
+}
+
+
+#skjema, #div_tekst {
+  background: rgba(192,192,192,0.3);
+}
+
+#top {
+  text-align: center;
+}
+
+#male, #female {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 15px;
+}
+
+.inputfield, #submit {
+  margin-bottom: 35px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#submit {
+  font-size: 20px;
+}
+
+/* css styling for fugleindeks/blibliotek*/
+
+.fugleOversikt_wrap {
+  min-height: inherit;
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background: rgba(192,192,192,0.3) /* Grå bakgrunn med 30% gjennomsiktighet  */
+}
+
+#sookFugl, #fugleListe {
+  width: 35%;
+  min-width: 120px;
+}
+
+
+#fugleListe {
+  border:solid;
+  border-bottom: 0px;
+}
+
+#fugleListe a {
+  padding: 10px;
+  padding-right: 0px;
+  text-align: center;
+  border-bottom: solid;
+  display:block;
+  text-decoration: none;
+}
+
+#fugleListe a:hover {
+  background-color: #10BBA1 !important;
+}
+
+#fugleInfoText {
+  display: flow-root;
+}
+
+/* CSS-styling for visFugl.html */
+#fugleInfoText {
+  height: 100%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: lightblue, 0.3;
+  flex-flow: row, wrap;
+}
+
+
+
+#fuglTitle {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.birdText {
+position: relative;
+margin-left: 20%;
+margin-right: 20%;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+.birdImg {
+  position: relative;
+  width: 480px;
+  padding-bottom: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+  max-width: 100%;
+}
+
+#fugleInfoImg {
+  width: 480px;
+  max-width: 100%;
+}
+
+
+/* css styling for arrangement siden*/
+.arrangementer_wrap, .fugleOversikt_wrap {
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 15%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background: rgba(192,192,192,0.3) /* Grå bakgrunn med 30% gjennomsiktighet  */
+}
+
+.arrangement_wrap {
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background: rgba(192,192,192,0.7) /* Grå bakgrunn med 30% gjennomsiktighet  */
+}
+/* css styling for footer elementet */
+footer {
+  padding: 10px;
+  margin-bottom: - 20px;
+  border: 5px solid #C5CACA;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+footer > * {
+  display: inline-block;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+
+@media only screen and (max-width: 480px) {
+  body{
+    width: 100%;
+  }
+  #mobilknapp {
+    position: sticky;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    display: block !important;
+  }
+  #navBar {
+    display: none;
+  }
+  #mobBar ul {
+    padding: 0;
+    text-align: right;
+
+  }
+  #mobBar {
+    position: fixed;
+    display: none;
+    bottom: : 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+    top: 0px;
+    padding-top: 50px;
+    margin: 0px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.9);
+    text-align: left;
+  }
+  #mobBar ul li {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 15px;
+    display: block;
+    line-height: 1.5;
+  }
+  #mobBar ul li a{
+    padding-right: 10px;
+  }
+  h1 {
+    font-size: 1em;
+  }
+  .fugleOversikt_wrap h1{
+    font-size: 100%;
+  }
+  .one {
+    font-size: 14px;
+  }
+}
