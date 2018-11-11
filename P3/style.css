@@ -248,8 +248,7 @@ padding-right: 3%;
   height: 100%;
   margin-left: 20%;
   margin-right: 20%;
-  background-color: lightblue, 0.3;
-  flex-flow: row, wrap;
+  background: rgba(192,192,192,0.3);
 }
 
 #fuglTitle {
@@ -258,7 +257,6 @@ padding-right: 3%;
 }
 
 .birdText {
-position: relative;
 margin-left: 20%;
 margin-right: 20%;
 margin-top: 30px;
@@ -266,17 +264,14 @@ margin-bottom: 30px;
 }
 
 .birdImg {
-  position: relative;
-  width: 480px;
+  width: 60%;
   padding-bottom: 50px;
   margin-left: 20%;
   margin-right: 20%;
-  max-width: 100%;
 }
 
 #fugleInfoImg {
-  width: 480px;
-  max-width: 100%;
+  width: 100%;
 }
 
 
