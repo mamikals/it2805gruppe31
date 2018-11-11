@@ -152,6 +152,7 @@ body {
   width: 480px;
   height: 360px;
   margin: 20px;
+  max-width: 100%;
 }
 
 /* css styling for blimedlem*/
@@ -272,11 +273,13 @@ margin-bottom: 30px;
   width: 480px;
   padding-bottom: 50px;
   margin-left: 20%;
-  margin-right: 20%
+  margin-right: 20%;
+  max-width: 100%;
 }
 
 #fugleInfoImg {
   width: 480px;
+  max-width: 100%;
 }
 
 
