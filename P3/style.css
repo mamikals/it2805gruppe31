@@ -48,7 +48,7 @@ body {
 
 
 
-  #navBar {
+  .navBar {
     position: sticky;
     z-index: 1;
     top: 0px;
@@ -59,7 +59,7 @@ body {
     text-align: center;
     }
 
-.navlist {
+.navBar ul li  {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -67,60 +67,63 @@ body {
     line-height: 1.5;
 }
 
-.navlink {
+.navBar ul li a {
   padding: 18px;
 }
 
 
- .navlink:hover {
+.navBar ul li a:hover {
   color: #FFFFFF;
   background-color: #ACA9A8;
 }
 
-#navBar > * {
-padding-left: 3%;
-padding-right: 3%;
-}
-
-#mobilknapp{
-  display: none !important;
+.mobilknapp {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   background-color: #FFFFFF;
   border: 5px solid #C5CACA;
-  padding: 15px 32px;
+  padding: 15px 15px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
     }
 
 
- @media screen and (max-width: 600) {
-    body{
-      font-size: 80px;
-    }
-
-      #mobilknapp {
-          display: block !important;
-        }
-
-    #navBar {
+ @media screen and (max-width: 600px) {
+    .navBar {
           position: fixed;
           display: none;
-          bottom: : 0;
+          top:  0;
           left: 0;
           display: none;
           z-index: 1;
           top: 0px;
-          padding: 10px;
           margin: 0px;
-          height: 100%
           border: 5px solid #C5CACA;
           background-color: #FFFFFF;
           text-align: left;
     }
+    .navBar ul {
+      padding: 0;
+      padding-top: 30px;
+    }
+    .navBar ul li {
+        list-style-type: none;
+        margin: 0;
+        padding-top: 15px;
+        display: block;
+        line-height: 1.5;
+    }
+      .mobilknapp {
+          display: block;
+          z-index: 2;
+        }
+
+        h1 {
+          font-size: 1em;
+        }
   }
 
 /* css styling for index*/
@@ -292,6 +295,10 @@ padding-right: 3%;
   background-color: #10BBA1 !important;
 }
 
+#fugleInfoText {
+  display: flow-root;
+}
+
 /* CSS-styling for visFugl.html */
 #fugleInfoText {
   height: 100%;
@@ -345,9 +352,10 @@ margin-bottom: 30px;
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 10%;
+  padding-right: 5%;
   margin-left: 20%;
   margin-right: 20%;
-  background: rgba(192,192,192,0.3) /* Grå bakgrunn med 30% gjennomsiktighet  */
+  background: rgba(192,192,192,0.7) /* Grå bakgrunn med 30% gjennomsiktighet  */
 }
 /* css styling for footer elementet */
 footer {

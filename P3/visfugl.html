@@ -2,28 +2,29 @@
 <html lang="no" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/favicon.png">
     <title></title>
   </head>
   <body>  <body>
       <div class="slideshow">
-        <img id="coverPhoto" src= "P3/prosjekt_webtek/img/coverphoto_4.jpg" alt= "Bilde av fugler" > <!-- blidet som vises hvis scriptet som skal spille av forskjellige bilder ikke loader -->
+        <img id="coverPhoto" src= "img/coverphoto_4.jpg" alt= "Bilde av fugler" > <!-- blidet som vises hvis scriptet som skal spille av forskjellige bilder ikke loader -->
           <div id="logo"> <!-- logo som skal ligge over slideshowet/cover bildet-->
             <img src="img/logo.png" alt="Norske fugletittere" />
           </div>
       </div>
-      <button id= "mobilknapp" onclick="dropdown()">Meny</button>
-      <div id="navBar">
+      <button class= "mobilknapp" onclick="dropdown()">Meny</button>
+      <div class="navBar" id = "navBar" >
         <ul>
-          <li class="navlist" ><a class="navlink" href="index.html">Hjem</a></li>
-          <li class="navlist"><a class="navlink" href="arrangementoversikt.html">Arrangementer</a></li>
-          <li class="navlist"><a class="navlink" href="galleri.html">Galleri</a></li>
-          <li class="navlist"><a class="navlink" href="fugleoversikt.html">Fugleoversikt</a></li>
-          <li class="navlist"><a class="navlink" href="medlemskap.html">Bli medlem</a></li>
+          <li ><a href="index.html">Hjem</a></li>
+          <li ><a href="arrangementoversikt.html">Arrangementer</a></li>
+          <li ><a href="galleri.html">Galleri</a></li>
+          <li ><a href="fugleoversikt.html">Fugleoversikt</a></li>
+          <li ><a  href="medlemskap.html">Bli medlem</a></li>
         </ul>
       </div>
-      <div id="bodyOfSite" style="background-image:url(img/dinbakgrunn.jpg)" > <!-- sett inn din valgte bakgrunn! -->
+      <div id="bodyOfSite" style="background-image:url(img/bakgrunn_fugl.jpg)" > <!-- sett inn din valgte bakgrunn! -->
 
         <!-- Her skal du plassere din kode for den bestemte siden. legg koden i en div som du bruker som wrap -->
 
