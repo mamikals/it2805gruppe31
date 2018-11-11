@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Endringer</title>
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/P1_Style.css">
+</head>
+<body>
+  <div class="inner">
+    <h1>Norske Fugletittere</h1>
+    <h4>Mikal Norvoll, Aksel Saugestad, Morten Mikalsen, Fredrik P. Moren, Liv-Randi Lersveen</h4>
+    <h6>11.11.2018</h6>
+
+    <h2>Administrative detaljer</h2>
+    <p> Vi har en falsk klient "Norske Fugletittere". Dette er en oppdiktet organisasjon med tilholdssted
+      i Trondheim. </p>
+
+    <h2>Endringene vi har gjort</h2>
+
+    <h3>Endringer på index.html</h3>
+    <p>Det er ingen nevneverdige endringer her. Det eneste ligger i design delen som har fått en overhaul. Bilder er byttet ut med flere og finere bilder. Slideshowet er også implimentert</p>
+
+    <h3>Endringer på arrangementoversikt.html</h3>
+    <p>Arrangement siden har en synlig endring. Isteden for å dele arrangementene opp i "kommende arrangementer" og "tidligere arrangementer",
+    så er det et element som inneholder de arrangementene som ligger i den tilhørende xml-fila.
+    Dette forenklet javascriptet noe og gjorde at utseendet ble mer likt for ulike platformer</p>
+
+    <h3>Endringer på arrangement.html</h3>
+    <p>Størrelsesforholdet mellom de ulike typene informasjon er noe endret, ellers så inneholder siden ingen store synlige endringer. Disse endringene ble gjort med tanke på å forbedre leseropplevelsen.</p>
+
+    <h3>Endringer på galleri.html</h3>
+    <p>I galleriet måtte vi droppe ideen med at antall columns avhenger av vinduets oppløsning, da vi ikke har tilgang til flexboxer.</p>
+
+    <h3>Endringer på fugleoversikt.html</h3>
+    <p>Siden skulle orginalt inneholde to forskjellige menyer: alle fugler og populære fugler. Men siden vi
+    bestemte oss for å midtstille sidene, ble de populære fuglene kastet bort. Siden bruker heller ikke
+    en skrollebar som vist i designdokumentet. Vi fant ut at det ikke var nødvendig ettersom vi bare
+    hade et fåtall antall fugler.</p>
+
+    <h3>Endringer på visfugl.html</h3>
+    <p>Gjør stort sett det samme som den skulle gjøre, men viser ikke fuglens habitat da alle er vanlige fugler i Norge.</p>
+
+    <h3>Endringer på medlemskap.html</h3>
+    <p>Siden inneholder de samme elementene, men oppsettet til siden er endret slik at alt er midtstilt på siden. Dette
+    er fordi det var mer praktisk og virket ikke negativt på utseendet.
+    </p>
+
+    <h3>Endringer på style.css</h3>
+    <p>Siden har en større skrifttype enn det som ble foreslått i P2. </p>
+
+    <h3>Endringer på dropdown.js</h3>
+    <p>Det ble lagt til kode fra nettet
+    (<a href="https://www.blustemy.io/detecting-a-click-outside-an-element-in-javascript/">https://www.blustemy.io/detecting-a-click-outside-an-element-in-javascript/</a>)
+    for å lukke dropdown-menyen når en person scroller eller trykker utenfor menyen.</p>
+
+    <h3>Endringer på fugleinfo.js</h3>
+    <p>Det er ikke blitt gjort noen endringer på fugleinfo.js fra P2.</p>
+
+    <h3>Endringer på hentearrangement.js</h3>
+    <p>Det er ingen endringer i fila hentarangement.js fra det som ble nevnt i P2.</p>
+
+
+    <h3>Endringer på jsSlideShow.js</h3>
+    <p>Endringer og diskusjon rundt varighet og hastighet, rolige overganger passer kanskje bedre til en fugleside. Lagt til flere bilder.</p>
+
+    <h3>Ny javascript-fil jsFlyingBird.js</h3>
+    <p>Små endringer i hvor langt opp fuglen kommer før eventen aktiveres, pga. forskjellige skjermstørrelser.</p>
+
+    <h3>Endringer på listFugler.js</h3>
+    <p>I denne filen ble det lagt til en ny funksjon oppdaterFarge(). Vi så at det ble vanskelig
+    å skille mellom fuglene. Denne funksjonen sørger for at hvert element får annenhver farge.
+    Vi var nødt til å lage en funksjon istedet for å bruke nth-child(even) og nth-child(odd),
+    fordi css ikke ville oppdatere seg hvis man brukte søk-baren.</p>
+
+    <h3>Ny javascript-fil hoyde.js</h3>
+    <p>Fordi det var et lite antall arrangementer, kunne det hende at høyden til arrangementoversikt.html
+    ble mindre enn enheten på mobilversjonen. For å forhindre dette sørger denne javascript-filen for
+    at siden aldri er mindre enn enheten.</p>
+    <h3>Fjernet bildeForvisning.js</h3>
+    <p>Orginalt skulle det være mulig å se en forhåndsvisning av fuglen når man holdt over linken.
+    Men det ble forstyrende for brukeren, siden det er det eneste innholdet i fugleoversikt,
+    og fordi det ikke passet inn i mobilversjonen. Derfor bestemte vi oss for å bli kvitt ideen.</p>
+
+    <h3>Modularitetskrav</h3>
+    <p>For å oppfylle kravet om modularitet lagde vi mesteparten av siden med prosent som bredde eller høyde
+    eller brukte min-height og min-width. Vi lagde også en mobilversjon av CSS-en, med media query for
+    skjermer mindre enn 480px. Vi lagde også en egen dropdown navbar for mobil-siden.</p>
+
+    <h2>Oppdatert full fil struktur</h2>
+    <ul>
+      <li>index.html</li>
+      <li>medlemskap.html</li>
+      <li>galleri.html</li>
+      <li>arrangementoversikt.html</li>
+      <li>fugleoversikt.html</li>
+      <li>arrangement.html</li>
+      <li>fugl.html</li>
+      <li>arrangement.xml</li>
+      <li>fugl.xml</li>
+      <li>style.css</li>
+      <li>birdimg/</li>
+      <ul>
+        <li>blaameis.jpg</li>
+        <li>dompap.jpg</li>
+        <li>flaggspett.jpg</li>
+        <li>graasisik.jpg</li>
+        <li>graaspurv.jpg</li>
+        <li>granmeis.jpg</li>
+        <li>groennfink.jpg</li>
+        <li>groennsisik.jpg</li>
+        <li>gulspurv.jpg</li>
+        <li>kjoettmeis.jpg</li>
+        <li>kraake.jpg</li>
+        <li>noetteskrike.jpg</li>
+        <li>pilfink.jpg</li>
+        <li>roedstrupe.jpg</li>
+        <li>skjaere.jpg</li>
+        <li>spettmeis.jpg</li>
+        <li>svartmeis.jpg</li>
+        <li>svarttrost.jpg</li>
+      </ul>
+      <li>galleribilder_små/</li>
+      <ul>
+        <li>bird1.jpg</li>
+        <li>bird2.jpg</li>
+        <li>bird3.jpg</li>
+        <li>bird4.jpg</li>
+        <li>bird5.jpg</li>
+        <li>bird6.jpg</li>
+        <li>bird7.jpg</li>
+      </ul>
+      <li>img/</li>
+      <ul>
+        <li>backgroundIndex.jpg</li>
+        <li>background_arrangement.jpg</li>
+        <li>bakgrunn_fugl.jpg</li>
+        <li>galleryFeathersMed.jpg</li>
+        <li>birdDown.jpg</li>
+        <li>birdUp.jpg</li>
+        <li>coverphoto_1.jpg</li>
+        <li>coverphoto_2.jpg</li>
+        <li>coverphoto_3.jpg</li>
+        <li>coverphoto_4.jpg</li>
+        <li>favicon.png</li>
+        <li>logo.png</li>
+        <li>Medlemskapbakgrunn.jpg</li>
+        <li>Månedens bilde.jpg</li>
+        <li>navicon.png</li>
+      </ul>
+      <li>scripts/</li>
+      <ul>
+        <li>dropdown.js</li>
+        <li>fugleinfo.js</li>
+        <li>hentearrangement.js</li>
+        <li>hoyde.js</li>
+        <li>jsFlyingBird.js</li>
+        <li>jsSlideShow.js</li>
+        <li>listFugler.js</li>
+        <li>medlemsscript.js</li>
+        <li>visArrangement.js</li>
+      </ul>
+    </ul>
+
+    <h3>Endelig arbeidsfordeling</h3>
+    <div class="table">
+      <table>
+        <thead>
+          <td>Oppgaver</td>
+          <td>Beskrivelse</td>
+          <td>Ansvarlig(e) Personer</td>
+        </thead>
+        <tr>
+          <td>index.html</td>
+          <td>framsiden/hjemmesiden</td>
+          <td>Fredrik</td>
+        </tr>
+        <tr>
+          <td>medlemskap.html</td>
+          <td>Siden hvor besøkende kan søke om medlemskap</td>
+          <td>Aksel</td>
+        </tr>
+        <tr>
+          <td>galleri.html</td>
+          <td>side hvor bilder som blir tatt av medlemmene publiseres</td>
+          <td>Mikal</td>
+        </tr>
+        <tr>
+          <td>arrangementoversikt.html</td>
+          <td>siden som inneholder info om kommende og tidligere arrangementer</td>
+          <td>Liv-Randi/Morten</td>
+        </tr>
+        <tr>
+          <td>fugleoversikt.html</td>
+          <td>side som linker til ulike sider med informasjon om forskjellige fugler</td>
+          <td>Morten</td>
+        </tr>
+        <tr>
+          <td>arrangement.html</td>
+          <td>side som inneholder spesifikk informasjon om et arrangement</td>
+          <td>Liv-Randi</td>
+        </tr>
+        <tr>
+          <td>visfugl.html</td>
+          <td>Side som inneholder spesifikk informasjon om en fugl</td>
+          <td>Mikal</td>
+        </tr>
+        <tr>
+          <td>arrangement.xml</td>
+          <td>XML-fil for å lagre informasjonen om arrangementene.</td>
+          <td>Liv-Randi</td>
+        </tr>
+        <tr>
+          <td>fugl.xml</td>
+          <td>XML-fil for å lagre informasjonen om fuglene</td>
+          <td>Mikal/Morten</td>
+        </tr>
+        <tr>
+          <td>style.css</td>
+          <td>CSS-fil med all stylingen</td>
+          <td>Alle</td>
+        </tr>
+        <tr>
+          <td>favicon.png</td>
+          <td>Et favicon til websiden</td>
+          <td>Morten</td>
+        </tr>
+        <tr>
+          <td>logo.png</td>
+          <td>Logoen vil vises over toppbildet på alle sidene</td>
+          <td>Morten</td>
+        </tr>
+        <tr>
+          <td>fugleinfo.js</td>
+          <td>Skal hente informasjon fra en .xml-fil og finne rett bilde for fugle</td>
+          <td>Mikal/Morten</td>
+        </tr>
+        <tr>
+          <td>hentearrangement.js</td>
+          <td>Skal hente informasjon fra en .xml-fil og finne rett bilde for arrangementet</td>
+          <td>Liv-Randi</td>
+        </tr>
+        <tr>
+          <td>medlemskapscript.js</td>
+          <td>Sender "sende inn" medlemskapsdata og gi brukeren bekreftelse på innsending</td>
+          <td>Aksel</td>
+        </tr>
+        <tr>
+          <td>listfugler.js</td>
+          <td>Et søkefelt hvor besøkende kan søke etter fugler i fugleoversikten</td>
+          <td>Morten</td>
+        </tr>
+        <tr>
+          <td>jsSlideShow.js</td>
+          <td>Skifter bilder i toppdelen av nettsidene.</td>
+          <td>Fredrik</td>
+        </tr>
+        <tr>
+          <td>jsFlyingBird.js</td>
+          <td>En artig funksjon tenkt på tidlig i prosjektfasen, hvor interaksjon med fuglen vil få den til å lette og etterhvert fly ut og vekk fra siden.(Uttesting anbefales!)</td>
+          <td>Fredrik</td>
+        </tr>
+        <tr>
+          <td>dropdown.js</td>
+          <td>En dropdown meny for mobilbrukere å komme seg mellom sidene.</td>
+          <td>Liv-Randi/Morten</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
