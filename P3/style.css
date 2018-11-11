@@ -325,6 +325,7 @@ footer > * {
   }
   #mobilknapp img{
     width: 15%;
+    float: right;
   }
   #navBar {
     display: none;
